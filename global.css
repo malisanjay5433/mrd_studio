@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .text-edge-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.08);
+  }
+
+  ::selection {
+    background-color: rgba(186, 95, 69, 0.35);
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .heading-editorial {
+    @apply font-display font-medium tracking-[-0.02em];
+  }
+
+  .heading-display-xl {
+    @apply font-display text-4xl font-light tracking-[-0.03em] md:text-5xl lg:text-6xl;
+  }
+
+  .label-caps {
+    @apply text-[10px] font-semibold uppercase tracking-[0.28em];
+  }
+
+  .body-editorial {
+    @apply text-[0.9375rem] font-normal leading-[1.85] md:text-base md:leading-[1.8];
+  }
+
+  .link-underline {
+    @apply border-b pb-0.5 text-[10px] font-semibold uppercase tracking-[0.2em] transition-all duration-500 ease-luxury;
+  }
+
+  .heading-board {
+    @apply heading-editorial;
+  }
+
+  .label-board {
+    @apply label-caps;
+  }
+
+  .body-board {
+    @apply body-editorial text-sm md:text-base;
+  }
+
+  .card-editorial {
+    @apply shadow-soft transition-all duration-500 ease-luxury hover:-translate-y-0.5 hover:shadow-lift;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: rgba(34, 32, 32, 0.95);
+  }
+
+  /** Charcoal ground — white/sand type */
+  .surface-dark {
+    @apply bg-brand-charcoal text-brand-sand;
+  }
+
+  .surface-dark .heading-editorial,
+  .surface-dark .heading-display-xl {
+    @apply text-brand-white;
+  }
+
+  .surface-dark .label-caps {
+    color: rgba(201, 193, 181, 0.7);
+  }
+
+  .surface-dark .body-editorial {
+    @apply text-brand-sand;
+  }
+
+  .surface-dark .link-underline {
+    @apply text-brand-white hover:border-brand-terracotta hover:text-brand-terracotta;
+    border-bottom-color: rgba(255, 255, 255, 0.55);
+  }
+
+  /** Beige/sand panel — charcoal/clay type */
+  .surface-light {
+    @apply bg-brand-beige text-brand-clay;
+  }
+
+  .surface-light .heading-editorial,
+  .surface-light .heading-display-xl {
+    @apply text-brand-charcoal;
+  }
+
+  .surface-light .label-caps {
+    color: rgba(122, 107, 95, 0.8);
+  }
+
+  .surface-light .body-editorial {
+    @apply text-brand-clay;
+  }
+
+  .surface-light .link-underline {
+    @apply text-brand-charcoal hover:border-brand-terracotta hover:text-brand-terracotta;
+    border-bottom-color: rgba(26, 24, 22, 0.55);
+  }
+
+  /** Type on photography / gradients (no solid surface bg) */
+  .tone-dark {
+    @apply text-brand-sand;
+  }
+
+  .tone-dark .label-caps {
+    color: rgba(201, 193, 181, 0.72);
+  }
+
+  .tone-dark .heading-editorial,
+  .tone-dark .heading-display-xl {
+    @apply text-brand-white;
+  }
+
+  .tone-dark .body-editorial {
+    @apply text-brand-sand;
+  }
+
+  /** Minimal caps nav — hairline underline on hover */
+  .nav-editorial-link {
+    @apply relative text-brand-sand transition-colors duration-500 ease-luxury hover:text-brand-white;
+  }
+
+  .nav-editorial-link::after {
+    content: "";
+    @apply pointer-events-none absolute -bottom-1 left-0 h-px w-0 bg-current opacity-70 transition-all duration-500 ease-luxury;
+  }
+
+  .nav-editorial-link:hover::after,
+  .nav-editorial-link:focus-visible::after {
+    @apply w-full opacity-100;
+  }
+}

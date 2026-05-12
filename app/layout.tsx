@@ -1,0 +1,109 @@
+import "../global.css";
+import { Manrope, Outfit } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Analytics } from "@/components/layout/analytics";
+import { PwaRegister } from "@/components/layout/pwa-register";
+
+function siteOrigin(): string {
+	const explicit = process.env.NEXT_PUBLIC_SITE_URL;
+	if (explicit) {
+		return explicit.replace(/\/$/, "");
+	}
+	if (process.env.VERCEL_URL) {
+		return `https://${process.env.VERCEL_URL}`;
+	}
+	return "http://localhost:3000";
+}
+
+export const metadata: Metadata = {
+	metadataBase: new URL(siteOrigin()),
+	title: {
+		default: "MRUD STUDIO — Handmade ceramics",
+		template: "%s | MRUD STUDIO",
+	},
+	description:
+		"MRUD STUDIO — handcrafted dinnerware and studio ceramics. Quiet luxury, earthy glazes, and forms shaped for daily ritual.",
+	applicationName: "MRUD STUDIO",
+	appleWebApp: {
+		capable: true,
+		title: "MRUD STUDIO",
+		statusBarStyle: "black-translucent",
+	},
+	openGraph: {
+		title: "MRUD STUDIO — Handmade ceramics",
+		description:
+			"Editorial ceramics studio — tableware, objects, and kiln-fired work for the home.",
+		type: "website",
+		locale: "en-US",
+	},
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			"max-video-preview": -1,
+			"max-image-preview": "large",
+			"max-snippet": -1,
+		},
+	},
+	twitter: {
+		title: "MRUD STUDIO — Handmade ceramics",
+		card: "summary_large_image",
+	},
+	icons: {
+		icon: [
+			{ url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+			{ url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+		],
+		apple: "/icons/apple-touch-icon.png",
+		shortcut: "/favicon.png",
+	},
+};
+
+export const viewport: Viewport = {
+	themeColor: [
+		{ media: "(prefers-color-scheme: light)", color: "#1A1816" },
+		{ media: "(prefers-color-scheme: dark)", color: "#1A1816" },
+	],
+	colorScheme: "dark",
+	width: "device-width",
+	initialScale: 1,
+};
+
+const outfit = Outfit({
+	subsets: ["latin"],
+	variable: "--font-outfit",
+	weight: ["300", "400", "500", "600", "700"],
+});
+
+const manrope = Manrope({
+	subsets: ["latin"],
+	variable: "--font-manrope",
+	weight: ["300", "400", "500", "600"],
+});
+
+export default function RootLayout({
+	children,
+}: {
+	children: React.ReactNode;
+}) {
+	return (
+		<html
+			lang="en"
+			className={`scroll-smooth overflow-x-clip ${outfit.variable} ${manrope.variable}`}
+		>
+			<head>
+				<Analytics />
+			</head>
+			<body
+				className={`bg-brand-charcoal font-sans text-brand-sand antialiased ${
+					process.env.NODE_ENV === "development" ? "debug-screens" : ""
+				}`}
+			>
+				<PwaRegister />
+				{children}
+			</body>
+		</html>
+	);
+}
