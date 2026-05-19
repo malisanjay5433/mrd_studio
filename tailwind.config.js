@@ -1,6 +1,6 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
-/** MRUD STUDIO brand sheet — white, sand, beige, clay, terracotta, charcoal */
+/** Rajlaxmi brand sheet — white, sand, beige, clay, terracotta, charcoal */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [

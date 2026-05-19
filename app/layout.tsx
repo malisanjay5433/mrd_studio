@@ -3,6 +3,7 @@ import { Manrope, Outfit } from "next/font/google";
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@/components/layout/analytics";
 import { PwaRegister } from "@/components/layout/pwa-register";
+import { SITE } from "@/lib/constants/landing";
 
 function siteOrigin(): string {
 	const explicit = process.env.NEXT_PUBLIC_SITE_URL;
@@ -18,19 +19,19 @@ function siteOrigin(): string {
 export const metadata: Metadata = {
 	metadataBase: new URL(siteOrigin()),
 	title: {
-		default: "MRUD STUDIO — Handmade ceramics",
-		template: "%s | MRUD STUDIO",
+		default: `${SITE.name} — Handmade ceramics`,
+		template: `%s | ${SITE.name}`,
 	},
 	description:
-		"MRUD STUDIO — handcrafted dinnerware and studio ceramics. Quiet luxury, earthy glazes, and forms shaped for daily ritual.",
-	applicationName: "MRUD STUDIO",
+		`${SITE.name} — handcrafted dinnerware and studio ceramics. Quiet luxury, earthy glazes, and forms shaped for daily ritual.`,
+	applicationName: SITE.name,
 	appleWebApp: {
 		capable: true,
-		title: "MRUD STUDIO",
+		title: SITE.name,
 		statusBarStyle: "black-translucent",
 	},
 	openGraph: {
-		title: "MRUD STUDIO — Handmade ceramics",
+		title: `${SITE.name} — Handmade ceramics`,
 		description:
 			"Editorial ceramics studio — tableware, objects, and kiln-fired work for the home.",
 		type: "website",
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "MRUD STUDIO — Handmade ceramics",
+		title: `${SITE.name} — Handmade ceramics`,
 		card: "summary_large_image",
 	},
 	icons: {

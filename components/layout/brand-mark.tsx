@@ -1,3 +1,5 @@
+import { SITE } from "@/lib/constants/landing";
+
 type Props = {
 	variant?: "dark" | "light";
 	className?: string;
@@ -11,9 +13,9 @@ const textScale = {
 };
 
 const wordClass = {
-	sm: "text-base tracking-[0.18em] md:text-lg",
-	md: "text-lg tracking-[0.2em] md:text-xl",
-	lg: "text-2xl tracking-[0.18em] md:text-3xl",
+	sm: "text-sm tracking-[0.08em] md:text-base md:tracking-[0.12em]",
+	md: "text-base tracking-[0.1em] md:text-lg md:tracking-[0.14em]",
+	lg: "text-lg tracking-[0.1em] md:text-2xl md:tracking-[0.12em]",
 };
 
 const subClass = {
@@ -46,7 +48,7 @@ export function BrandMark({
 				className={`shrink-0 ${iconSize[size]}`}
 				aria-hidden
 			>
-				<title>MRUD STUDIO mark</title>
+				<title>{SITE.name} mark</title>
 				<path
 					d="M18 36c0-8 6.5-14 14-14s14 6 14 14v4c0 6-5.5 11-12 11h-4c-6.5 0-12-5-12-11v-4z"
 					fill="none"
@@ -80,8 +82,10 @@ export function BrandMark({
 				/>
 			</svg>
 			<div className="flex flex-col leading-none">
-				<span className={`font-display font-medium ${wordClass[size]} ${textMain}`}>
-					MRUD
+				<span
+					className={`font-display font-medium ${wordClass[size]} ${textMain} max-w-[12rem] text-balance sm:max-w-none`}
+				>
+					{SITE.name}
 				</span>
 				<span
 					className={`mt-2 font-semibold uppercase ${subClass[size]} ${textSub}`}

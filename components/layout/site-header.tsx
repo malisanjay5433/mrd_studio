@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { PRIMARY_NAV } from "@/lib/constants/landing";
+import { PRIMARY_NAV, SITE } from "@/lib/constants/landing";
 import { BrandMark } from "./brand-mark";
 
 /**
@@ -15,7 +15,7 @@ export function SiteHeader() {
 				<Link
 					href="/"
 					className="shrink-0 transition-opacity duration-500 ease-luxury hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-white/35"
-					aria-label="MRUD STUDIO — home"
+					aria-label={`${SITE.name} — home`}
 				>
 					<BrandMark variant="light" size="sm" />
 				</Link>

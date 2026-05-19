@@ -22,11 +22,11 @@ export function GallerySection() {
 						id="gallery-heading"
 						className="heading-editorial mt-5 text-3xl font-light md:mt-6 md:text-4xl"
 					>
-						Pear studies
+						Quiet harvest
 					</h2>
 					<p className="body-editorial mt-8 max-w-xl">
-						Six colour studies — cream and sand through sage, teal, olive, and
-						moss — quiet compositions in soft light and organic spacing.
+						Colour studies from 2020–2025 — cream and sand through sage, teal,
+						olive, and moss — compositions in soft light and organic spacing.
 					</p>
 				</MotionReveal>
 

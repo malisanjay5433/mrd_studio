@@ -1,12 +1,13 @@
 import type { MetadataRoute } from "next";
+import { SITE } from "@/lib/constants/landing";
 
 const THEME = "#1A1816";
 
 export default function manifest(): MetadataRoute.Manifest {
 	return {
 		id: "/",
-		name: "MRUD STUDIO — Handmade ceramics",
-		short_name: "MRUD STUDIO",
+		name: `${SITE.name} — Handmade ceramics`,
+		short_name: SITE.name,
 		description:
 			"Handcrafted dinnerware and studio ceramics — quiet luxury, earthy glazes, and forms shaped for daily ritual.",
 		start_url: "/",

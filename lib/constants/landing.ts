@@ -1,16 +1,14 @@
 export const SITE = {
-	name: "MRUD STUDIO",
+	name: "Rajlaxmi",
 	tagline: "Handcrafted ceramics for slow living",
 	description:
 		"Editorial studio ceramics — dinnerware, vessels, and kiln-fired objects with earthy glazes and quiet luxury.",
 } as const;
 
-/**
- * Layout ratio for full-frame JPEGs (originals vary; this stabilizes `next/image` boxes).
- */
+/** Default aspect for catalogue stills when a piece omits explicit dimensions. */
 export const STUDIO_PHOTO = {
-	width: 4032,
-	height: 3024,
+	width: 5184,
+	height: 3456,
 } as const;
 
 /**
@@ -26,31 +24,24 @@ export const IMAGE_QUALITY = {
 } as const;
 
 /**
- * Product catalogue stills (`public/studio2/`) — sorted A→Z from archive names:
- * 01 bowl set · 02 casserole · 03 casserole set · 04 cereal bowl · 05 evening snack ·
- * 06 Irish coffee · 07 jar · 08 milk pot · 09 miniature pots · 10 mugs ·
- * 11 nesting bowls · 12 salad bowls · 13 table vase (barium) · 14 table vase (stony) ·
- * 15 tea light · 16 tea snack set · 17 twin vase.
- *
- * Each `studio2-NN` path appears only once across hero / products / gallery / strip / CTA.
+ * Product catalogue (`public/studio2/`) — sorted A→Z from Projects archive.
+ * Tableware editorial PNGs (`public/tableware/`) — header filmstrip only.
+ * Installations (`public/studio/`) — craft & CTA atmosphere.
  */
 export const HEADER_FILMSTRIP = [
-	"/studio2/studio2-07.jpg",
-	"/studio2/studio2-08.jpg",
-	"/studio2/studio2-11.jpg",
-	"/studio2/studio2-13.jpg",
-	"/studio2/studio2-15.jpg",
+	"/tableware/tableware-03.png",
+	"/tableware/tableware-04.png",
+	"/tableware/tableware-05.png",
+	"/tableware/tableware-06.png",
+	"/tableware/tableware-07.png",
 ] as const;
 
-/**
- * Workshop / candid frames — original `public/studio/` set (not the catalogue zip).
- */
+/** Hero, craft, and CTA frames — catalogue + installations. */
 export const STUDIO_FRAMES = {
-	/** Full-bleed hero — catalogue editorial (tea snack set). */
 	hero: "/studio2/studio2-16.jpg",
-	craftWide: "/studio/studio-08.jpg",
-	craftDetail: "/studio/studio-27.jpg",
-	ctaAtmosphere: "/studio2/studio2-17.jpg",
+	craftWide: "/studio/studio-01.png",
+	craftDetail: "/studio/studio-02.png",
+	ctaAtmosphere: "/studio/studio-03.png",
 } as const;
 
 export type NavItem = { label: string; href: string };
@@ -92,7 +83,8 @@ export const COLLECTION_ITEMS: CollectionPiece[] = [
 		image: {
 			src: "/studio2/studio2-01.jpg",
 			alt: "Bowl set — reduction-fired stoneware, copper red glaze",
-			...STUDIO_PHOTO,
+			width: 1218,
+			height: 597,
 		},
 	},
 	{
@@ -235,7 +227,8 @@ export const COLLECTION_ITEMS: CollectionPiece[] = [
 		image: {
 			src: "/studio2/studio2-14.jpg",
 			alt: "Table vase — stoneware, stony matte glaze",
-			...STUDIO_PHOTO,
+			width: 1944,
+			height: 2592,
 		},
 	},
 	{
@@ -257,7 +250,8 @@ export const COLLECTION_ITEMS: CollectionPiece[] = [
 		image: {
 			src: "/studio2/studio2-16.jpg",
 			alt: "Tea snack set — reduction-fired stoneware tableware",
-			...STUDIO_PHOTO,
+			width: 3456,
+			height: 5184,
 		},
 	},
 	{
@@ -301,41 +295,41 @@ export type GalleryItem = {
 	height: number;
 };
 
-/** Masonry — pear studies: six curated colour stories (`public/pears/`). */
+/** Masonry — Quiet harvest series (`public/quiet-harvest/`). */
 export const GALLERY: GalleryItem[] = [
 	{
-		src: "/pears/pears-01.png",
-		alt: "Pear study — warm cream glaze, sand linen and dried botanicals",
+		src: "/quiet-harvest/quiet-harvest-01.png",
+		alt: "Quiet harvest — warm cream glaze on sand linen with dried botanicals",
 		width: 1402,
 		height: 1122,
 	},
 	{
-		src: "/pears/pears-04.png",
-		alt: "Pear study — speckled sand ivory on stacked dark wood",
+		src: "/quiet-harvest/quiet-harvest-07.png",
+		alt: "Quiet harvest — speckled ivory vessel on stacked dark wood",
 		width: 554,
 		height: 692,
 	},
 	{
-		src: "/pears/pears-03.png",
-		alt: "Pear study — mottled sage green on a speckled plate with terracotta rim",
+		src: "/quiet-harvest/quiet-harvest-03.png",
+		alt: "Quiet harvest — sage green glaze on a speckled plate with terracotta rim",
+		width: 707,
+		height: 532,
+	},
+	{
+		src: "/quiet-harvest/quiet-harvest-02.png",
+		alt: "Quiet harvest — forest teal and moss glaze with sandy highlights",
+		width: 1122,
+		height: 1402,
+	},
+	{
+		src: "/quiet-harvest/quiet-harvest-10.png",
+		alt: "Quiet harvest — olive and butter glaze on a dark wood pedestal",
 		width: 1402,
 		height: 1122,
 	},
 	{
-		src: "/pears/pears-02.png",
-		alt: "Pear study — forest teal and moss glaze with sandy highlights",
-		width: 1402,
-		height: 1122,
-	},
-	{
-		src: "/pears/pears-07.png",
-		alt: "Pear study — olive and butter glaze on a dark wood pedestal",
-		width: 1402,
-		height: 1122,
-	},
-	{
-		src: "/pears/pears-10.png",
-		alt: "Pear study — moss and sand glaze on weathered wood",
+		src: "/quiet-harvest/quiet-harvest-16.png",
+		alt: "Quiet harvest — moss and sand glaze on weathered wood",
 		width: 695,
 		height: 537,
 	},
@@ -362,8 +356,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const HERO_IMAGE = {
 	src: STUDIO_FRAMES.hero,
-	alt: "Tea snack set — reduction-fired stoneware tableware, MRUD STUDIO",
-	...STUDIO_PHOTO,
+	alt: "Tea snack set — reduction-fired stoneware tableware, Rajlaxmi",
+	width: 3456,
+	height: 5184,
 } as const;
 
 export const CRAFTSMANSHIP_IMAGES = {
@@ -379,5 +374,6 @@ export const CRAFTSMANSHIP_IMAGES = {
 
 export const CTA_BACKDROP = {
 	src: STUDIO_FRAMES.ctaAtmosphere,
-	...STUDIO_PHOTO,
+	width: 1122,
+	height: 1040,
 } as const;

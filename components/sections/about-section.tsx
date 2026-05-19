@@ -28,13 +28,10 @@ export function AboutSection() {
 								Rajlaxmi Sonawane
 							</h2>
 							<p className="body-editorial mt-10">
-								Rajlaxmi Sonawane is a contemporary artist working across
-								ceramics, painting, and mixed media through a minimal and tactile
-								approach. She holds a Bachelor&apos;s degree in Fine Art from
-								Mumbai and later pursued a Master&apos;s in Contemporary Art
-								Market from Milan. Having lived and worked in Europe, her practice
-								evolved through exposure to contemporary art, design, and
-								material-driven processes.
+								Rajlaxmi Sonawane is a contemporary artist exploring ceramics and
+								painting through a minimal and tactile approach. Working across
+								mediums, her practice is informed by an interest in material,
+								form, and spatial quietness.
 							</p>
 						</div>
 					</div>
@@ -50,19 +47,17 @@ export function AboutSection() {
 						<div className="min-w-0">
 							<SectionLabel>Practice</SectionLabel>
 							<h2 className="heading-editorial mt-6 text-3xl font-light md:mt-8 md:text-4xl lg:text-[2.35rem]">
-								Clay, emotion, and craft
+								Between art and design
 							</h2>
 							<p className="body-editorial mt-10">
-								Drawn to various mediums, clay remains her most intuitive and
-								favourite medium to work with. Her largely conceptual practice
-								explores themes of mental health, emotion, and inner human
-								experience through understated forms, subtle textures, and quiet
-								visual language.
+								After living and working in Europe, she developed a refined visual
+								language influenced by contemporary design, architecture, and slow
+								craftsmanship. Her work centres around understated forms and
+								subtle textures that invite pause and reflection.
 							</p>
 							<p className="body-editorial mt-6">
-								While rooted in contemporary expression, her work also reflects a
-								deep appreciation for traditional craftsmanship and the enduring
-								legacy of ceramics — one of the oldest crafts known to humanity.
+								Through ceramics and painting, she creates objects and surfaces
+								that exist between art, design, and emotion.
 							</p>
 						</div>
 					</div>
