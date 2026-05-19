@@ -25,7 +25,7 @@ export function CtaSection() {
 				/>
 			</div>
 			<div
-				className="absolute inset-0 bg-gradient-to-br from-brand-terracotta/88 via-brand-clay/85 to-brand-charcoal/96"
+				className="absolute inset-0 bg-brand-ink/92"
 				aria-hidden
 			/>
 			<GrainOverlay opacity="subtle" />
@@ -49,7 +49,7 @@ export function CtaSection() {
 							Get in touch
 						</Button>
 						<Button
-							href="/projects"
+							href="/collection"
 							variant="ghostOnDark"
 							className="!border-brand-white/22 !bg-transparent"
 						>

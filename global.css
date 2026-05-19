@@ -8,8 +8,16 @@
   }
 
   ::selection {
-    background-color: rgba(186, 95, 69, 0.35);
-    color: #ffffff;
+    background-color: rgba(23, 23, 23, 0.12);
+    color: #171717;
+  }
+
+  /** Collection & installation — fixed scale, no pinch-zoom on image */
+  .image-static {
+    transform: none !important;
+    touch-action: manipulation;
+    -webkit-user-drag: none;
+    user-select: none;
   }
 }
 
@@ -47,12 +55,14 @@
   }
 
   .card-editorial {
-    @apply shadow-soft transition-all duration-500 ease-luxury hover:-translate-y-0.5 hover:shadow-lift;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background-color: rgba(34, 32, 32, 0.95);
+    @apply border border-brand-line bg-brand-white shadow-soft transition-colors duration-500 ease-luxury;
   }
 
-  /** Charcoal ground — white/sand type */
+  .card-editorial:hover {
+    @apply border-brand-muted/30;
+  }
+
+  /** Ink ground — for hero & selective contrast blocks */
   .surface-dark {
     @apply bg-brand-charcoal text-brand-sand;
   }
@@ -63,48 +73,68 @@
   }
 
   .surface-dark .label-caps {
-    color: rgba(201, 193, 181, 0.7);
+    @apply text-brand-sand/70;
   }
 
   .surface-dark .body-editorial {
-    @apply text-brand-sand;
+    @apply text-brand-sand/95;
   }
 
   .surface-dark .link-underline {
-    @apply text-brand-white hover:border-brand-terracotta hover:text-brand-terracotta;
-    border-bottom-color: rgba(255, 255, 255, 0.55);
+    @apply border-brand-white/40 text-brand-white hover:border-brand-white hover:text-brand-white;
   }
 
-  /** Beige/sand panel — charcoal/clay type */
+  /** Paper ground — primary minimalist surface */
   .surface-light {
-    @apply bg-brand-beige text-brand-clay;
+    @apply bg-brand-paper text-brand-stone;
   }
 
   .surface-light .heading-editorial,
   .surface-light .heading-display-xl {
-    @apply text-brand-charcoal;
+    @apply text-brand-ink;
   }
 
   .surface-light .label-caps {
-    color: rgba(122, 107, 95, 0.8);
+    @apply text-brand-muted;
   }
 
   .surface-light .body-editorial {
-    @apply text-brand-clay;
+    @apply text-brand-stone;
   }
 
   .surface-light .link-underline {
-    @apply text-brand-charcoal hover:border-brand-terracotta hover:text-brand-terracotta;
-    border-bottom-color: rgba(26, 24, 22, 0.55);
+    @apply border-brand-ink/35 text-brand-ink hover:border-brand-ink hover:text-brand-ink;
   }
 
-  /** Type on photography / gradients (no solid surface bg) */
+  /** Alternate light section */
+  .surface-mist {
+    @apply bg-brand-mist text-brand-stone;
+  }
+
+  .surface-mist .heading-editorial,
+  .surface-mist .heading-display-xl {
+    @apply text-brand-ink;
+  }
+
+  .surface-mist .label-caps {
+    @apply text-brand-muted;
+  }
+
+  .surface-mist .body-editorial {
+    @apply text-brand-stone;
+  }
+
+  .surface-mist .link-underline {
+    @apply border-brand-ink/35 text-brand-ink hover:border-brand-ink hover:text-brand-ink;
+  }
+
+  /** Type on photography / gradients */
   .tone-dark {
     @apply text-brand-sand;
   }
 
   .tone-dark .label-caps {
-    color: rgba(201, 193, 181, 0.72);
+    @apply text-brand-sand/75;
   }
 
   .tone-dark .heading-editorial,
@@ -113,21 +143,36 @@
   }
 
   .tone-dark .body-editorial {
-    @apply text-brand-sand;
+    @apply text-brand-sand/95;
   }
 
-  /** Minimal caps nav — hairline underline on hover */
+  /** Minimal nav — light header */
   .nav-editorial-link {
-    @apply relative text-brand-sand transition-colors duration-500 ease-luxury hover:text-brand-white;
+    @apply relative text-brand-muted transition-colors duration-500 ease-luxury hover:text-brand-ink;
   }
 
   .nav-editorial-link::after {
     content: "";
-    @apply pointer-events-none absolute -bottom-1 left-0 h-px w-0 bg-current opacity-70 transition-all duration-500 ease-luxury;
+    @apply pointer-events-none absolute -bottom-1 left-0 h-px w-0 bg-brand-ink opacity-60 transition-all duration-500 ease-luxury;
   }
 
   .nav-editorial-link:hover::after,
   .nav-editorial-link:focus-visible::after {
+    @apply w-full opacity-100;
+  }
+
+  /** Nav on dark hero (mobile overlay contexts) */
+  .nav-editorial-link-on-dark {
+    @apply relative text-brand-sand/85 transition-colors duration-500 ease-luxury hover:text-brand-white;
+  }
+
+  .nav-editorial-link-on-dark::after {
+    content: "";
+    @apply pointer-events-none absolute -bottom-1 left-0 h-px w-0 bg-brand-white opacity-70 transition-all duration-500 ease-luxury;
+  }
+
+  .nav-editorial-link-on-dark:hover::after,
+  .nav-editorial-link-on-dark:focus-visible::after {
     @apply w-full opacity-100;
   }
 }

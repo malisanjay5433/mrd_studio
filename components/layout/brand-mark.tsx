@@ -35,7 +35,7 @@ export function BrandMark({
 	className = "",
 	size = "md",
 }: Props) {
-	const stroke = variant === "light" ? "#FFFFFF" : "#1A1816";
+	const stroke = variant === "light" ? "#FFFFFF" : "#171717";
 	const textMain =
 		variant === "light" ? "text-brand-white" : "text-brand-charcoal";
 	const textSub =

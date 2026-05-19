@@ -7,7 +7,7 @@ export function AboutSection() {
 		<section
 			id="about"
 			aria-labelledby="about-heading"
-			className="surface-light relative scroll-mt-24 border-b border-brand-clay/20"
+			className="surface-light relative scroll-mt-24 border-b border-brand-line"
 		>
 			<GrainOverlay opacity="subtle" />
 			<div className="relative mx-auto grid max-w-[1600px] gap-14 px-5 py-20 md:grid-cols-2 md:gap-20 md:px-10 md:py-28 lg:gap-32">

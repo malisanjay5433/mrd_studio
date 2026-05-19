@@ -47,7 +47,7 @@ export default function ContactPage() {
 			<main className="min-h-screen">
 				<section
 					aria-labelledby="contact-heading"
-					className="surface-light relative scroll-mt-24 border-b border-brand-clay/20"
+					className="surface-light relative scroll-mt-24 border-b border-brand-line"
 				>
 					<GrainOverlay opacity="subtle" />
 					<div className="relative mx-auto max-w-[1600px] px-5 py-20 md:px-10 md:py-28">
@@ -60,9 +60,23 @@ export default function ContactPage() {
 								Commissions &amp; studio inquiries
 							</h1>
 							<p className="body-editorial mt-10">
-								For custom tableware, trade, wholesale, or visits, send a note with
-								your timeline and how the pieces will be used. Restocks and markets
-								are announced on Instagram first.
+								For custom tableware, trade, wholesale, installation commissions, or
+								studio visits, send a note with your timeline and how the pieces
+								will be used. Browse the{" "}
+								<Link
+									href="/collection"
+									className="border-b border-brand-clay/40 transition hover:border-brand-terracotta hover:text-brand-terracotta"
+								>
+									collection
+								</Link>{" "}
+								or{" "}
+								<Link
+									href="/installations"
+									className="border-b border-brand-clay/40 transition hover:border-brand-terracotta hover:text-brand-terracotta"
+								>
+									installations
+								</Link>{" "}
+								before writing. Restocks are announced on Instagram first.
 							</p>
 						</MotionReveal>
 

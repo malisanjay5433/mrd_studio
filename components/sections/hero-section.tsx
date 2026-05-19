@@ -49,7 +49,7 @@ export function HeroSection() {
 			</motion.div>
 			<GrainOverlay opacity="medium" className="z-[1]" />
 			<div
-				className="absolute inset-0 z-[2] bg-gradient-to-t from-brand-charcoal/88 via-brand-charcoal/32 to-brand-charcoal/18"
+				className="absolute inset-0 z-[2] bg-gradient-to-t from-brand-charcoal/75 via-brand-charcoal/25 to-transparent"
 				aria-hidden
 			/>
 			<div className="pointer-events-none absolute inset-x-0 bottom-0 z-[3] h-px bg-gradient-to-r from-transparent via-brand-white/18 to-transparent" />
@@ -81,7 +81,7 @@ export function HeroSection() {
 						variants={item}
 						className="mt-10 flex flex-wrap items-center gap-4 md:mt-12 md:gap-6"
 					>
-						<Button href="/projects" variant="ghostOnDark" className="!px-7">
+						<Button href="/collection" variant="ghostOnDark" className="!px-7">
 							View collection
 						</Button>
 						<Button

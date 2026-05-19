@@ -13,7 +13,7 @@ export function GallerySection() {
 		<section
 			id="gallery"
 			aria-labelledby="gallery-heading"
-			className="surface-dark scroll-mt-24 border-b border-brand-rule px-5 py-20 md:px-10 md:py-28"
+			className="surface-mist scroll-mt-24 border-b border-brand-line px-5 py-20 md:px-10 md:py-28"
 		>
 			<div className="mx-auto max-w-[1600px]">
 				<MotionReveal className="max-w-2xl">
@@ -44,7 +44,7 @@ export function GallerySection() {
 							viewport={{ once: true, margin: "-5%" }}
 							transition={{ duration: 0.65, delay: (i % 3) * 0.05, ease }}
 						>
-							<div className="group relative overflow-hidden rounded-sm border border-brand-white/10 bg-brand-raised shadow-soft">
+							<div className="group relative overflow-hidden border border-brand-line bg-brand-white">
 								<div className="relative w-full">
 									<Image
 										src={item.src}

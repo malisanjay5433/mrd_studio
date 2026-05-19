@@ -1,6 +1,6 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
-/** Rajlaxmi brand sheet — white, sand, beige, clay, terracotta, charcoal */
+/** Minimal gallery palette — paper, ink, hairline, stone accent */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
@@ -16,50 +16,56 @@ module.exports = {
 			colors: {
 				brand: {
 					white: "#FFFFFF",
-					sand: "#C9C1B5",
-					beige: "#E8E1D4",
-					clay: "#7A6B5F",
-					terracotta: "#BA5F45",
-					charcoal: "#1A1816",
-					raised: "#222020",
-					rule: "#2E2B28",
+					paper: "#F9F8F6",
+					mist: "#F1F0ED",
+					line: "#E6E4DF",
+					muted: "#8C8A86",
+					ink: "#171717",
+					stone: "#5A5854",
+					sand: "#B5B1AA",
+					beige: "#F9F8F6",
+					clay: "#5A5854",
+					sage: "#7A7D78",
+					terracotta: "#5A5854",
+					charcoal: "#111111",
+					raised: "#FFFFFF",
+					rule: "#E6E4DF",
 				},
-				/** Legacy aliases — map to brand for gradual migration */
 				heath: {
-					ink: "#1A1816",
-					muted: "#7A6B5F",
-					subtle: "#9A9085",
-					paper: "#E8E1D4",
-					canvas: "#1A1816",
-					rule: "#2E2B28",
+					ink: "#171717",
+					muted: "#8C8A86",
+					subtle: "#A8A6A1",
+					paper: "#F9F8F6",
+					canvas: "#111111",
+					rule: "#E6E4DF",
 				},
 				earth: {
-					cream: "#E8E1D4",
-					beige: "#E8E1D4",
-					sand: "#C9C1B5",
-					clay: "#7A6B5F",
-					terracotta: "#BA5F45",
-					burnt: "#8F4A36",
+					cream: "#F9F8F6",
+					beige: "#F1F0ED",
+					sand: "#B5B1AA",
+					clay: "#5A5854",
+					terracotta: "#5A5854",
+					burnt: "#454340",
 				},
 				terracotta: {
-					DEFAULT: "#BA5F45",
-					muted: "#9E5340",
-					deep: "#7D3F2F",
-					subtle: "rgba(186, 95, 69, 0.22)",
+					DEFAULT: "#5A5854",
+					muted: "#6E6C68",
+					deep: "#454340",
+					subtle: "rgba(90, 88, 84, 0.12)",
 				},
-				cream: "#E8E1D4",
-				sand: "#C9C1B5",
-				charcoal: "#1A1816",
-				stone: "#7A6B5F",
+				cream: "#F9F8F6",
+				sand: "#B5B1AA",
+				charcoal: "#111111",
+				stone: "#5A5854",
 			},
 			fontFamily: {
 				sans: ["var(--font-manrope)", ...defaultTheme.fontFamily.sans],
 				display: ["var(--font-outfit)", ...defaultTheme.fontFamily.sans],
 			},
 			boxShadow: {
-				soft: "0 4px 28px -8px rgba(0, 0, 0, 0.4)",
-				lift: "0 24px 56px -24px rgba(0, 0, 0, 0.55)",
-				glow: "0 0 0 1px rgba(255, 255, 255, 0.06), 0 12px 40px -16px rgba(0, 0, 0, 0.5)",
+				soft: "0 1px 3px rgba(17, 17, 17, 0.04), 0 8px 24px -12px rgba(17, 17, 17, 0.08)",
+				lift: "0 2px 8px rgba(17, 17, 17, 0.06), 0 16px 40px -16px rgba(17, 17, 17, 0.1)",
+				glow: "0 0 0 1px rgba(17, 17, 17, 0.06)",
 			},
 			transitionTimingFunction: {
 				luxury: "cubic-bezier(0.22, 1, 0.36, 1)",
@@ -89,7 +95,7 @@ module.exports = {
 				"gradient-radial":
 					"radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
 				"noise-faint":
-					"url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E\")",
+					"url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E\")",
 			},
 			keyframes: {
 				"fade-up": {

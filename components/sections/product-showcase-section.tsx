@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { IMAGE_QUALITY, PRODUCTS } from "@/lib/constants/landing";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { SectionLabel } from "@/components/ui/section-label";
+import { StaticImage } from "@/components/ui/static-image";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -14,20 +14,20 @@ export function ProductShowcaseSection() {
 		<section
 			id="collection"
 			aria-labelledby="products-heading"
-			className="surface-dark scroll-mt-24 border-b border-brand-rule px-5 py-20 md:px-10 md:py-28"
+			className="surface-light scroll-mt-24 border-b border-brand-line px-5 py-20 md:px-10 md:py-28"
 		>
 			<div className="mx-auto max-w-[1600px]">
 				<MotionReveal className="max-w-2xl">
-					<SectionLabel>Product</SectionLabel>
+					<SectionLabel>Collection</SectionLabel>
 					<h2
 						id="products-heading"
 						className="heading-editorial mt-5 text-3xl font-light md:mt-6 md:text-4xl lg:text-[2.65rem]"
 					>
-						Bowls, mugs &amp; tableware
+						Tableware · 2015–2020
 					</h2>
 					<p className="body-editorial mt-8 max-w-xl">
-						A responsive edit of studio work — tactile rims, muted palettes, and
-						forms composed for the table.
+						An edit from the first studio years — serving sets, glaze studies, and
+						forms composed for slow meals.
 					</p>
 				</MotionReveal>
 
@@ -42,27 +42,27 @@ export function ProductShowcaseSection() {
 							>
 								<Link
 									href={product.href}
-									className="group block overflow-hidden rounded-sm border border-brand-white/10 bg-brand-raised shadow-soft transition-all duration-500 ease-luxury hover:-translate-y-1 hover:border-brand-white/18 hover:shadow-lift"
+									className="group block overflow-hidden border border-brand-line bg-brand-white transition-colors duration-500 hover:border-brand-muted/35"
 								>
-									<div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-brand-charcoal/50">
-										<Image
+									<div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-brand-paper">
+										<StaticImage
 											src={product.image.src}
 											alt={product.image.alt}
 											width={product.image.width}
 											height={product.image.height}
 											quality={IMAGE_QUALITY.section}
-											className="h-full w-full object-contain object-center p-6 transition-transform duration-[1.1s] ease-luxury group-hover:scale-[1.04]"
+											className="h-full w-full object-contain object-center p-6"
 											sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
 										/>
 									</div>
-									<div className="border-t border-brand-white/10 px-5 py-6">
-										<h3 className="font-display text-lg font-medium tracking-tight text-brand-white transition-colors group-hover:text-brand-terracotta">
+									<div className="border-t border-brand-line px-5 py-6">
+										<h3 className="font-display text-lg font-medium tracking-tight text-brand-ink">
 											{product.title}
 										</h3>
-										<p className="body-editorial mt-3 text-sm text-brand-sand/90">
+										<p className="body-editorial mt-3 text-sm text-brand-muted">
 											{product.description}
 										</p>
-										<span className="mt-4 inline-block text-[10px] font-semibold uppercase tracking-[0.2em] text-brand-sand/60 transition group-hover:text-brand-white">
+										<span className="mt-4 inline-block text-[10px] font-semibold uppercase tracking-[0.2em] text-brand-muted">
 											Discover →
 										</span>
 									</div>

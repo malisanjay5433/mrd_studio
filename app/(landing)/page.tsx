@@ -3,7 +3,7 @@ import { HeaderFilmstrip } from "@/components/layout/header-filmstrip";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { AboutSection } from "@/components/sections/about-section";
-import { CraftsmanshipSection } from "@/components/sections/craftsmanship-section";
+import { InstallationSection } from "@/components/sections/installation-section";
 import { CtaSection } from "@/components/sections/cta-section";
 import { GallerySection } from "@/components/sections/gallery-section";
 import { HeroSection } from "@/components/sections/hero-section";
@@ -58,7 +58,7 @@ export default function LandingPage() {
 				<HeroSection />
 				<AboutSection />
 				<ProductShowcaseSection />
-				<CraftsmanshipSection />
+				<InstallationSection />
 				<GallerySection />
 				<CtaSection />
 			</main>
