@@ -5,10 +5,10 @@ import {
 } from "@/lib/constants/collection";
 
 export const SITE = {
-	artist: "RAAJLAKSHMI",
-	name: "RAAJLAKSHMI",
+	artist: "Raajlakshmi",
+	name: "Raajlakshmi",
 	description:
-		"Handcrafted ceramics and contemporary art by RAAJLAKSHMI.",
+		"Handcrafted ceramics and contemporary art by Raajlakshmi.",
 } as const;
 
 /** Default aspect for catalogue stills when a piece omits explicit dimensions. */
@@ -146,7 +146,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const HERO_IMAGE = {
 	src: STUDIO_FRAMES.hero,
-	alt: "Marbled ceramic spheres in sand — installation by RAAJLAKSHMI",
+	alt: "Marbled ceramic spheres in sand — installation by Raajlakshmi",
 	width: 1024,
 	height: 949,
 } as const;
