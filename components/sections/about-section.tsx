@@ -21,9 +21,9 @@ export function AboutSection() {
 						{SITE.artist}
 					</h2>
 					<p className="body-editorial mt-10">
-						Rajlaxmi Sonawane is an Indian contemporary artist working across
-						ceramics and painting. Drawn to multiple mediums from an early stage in
-						her practice, she explores form, texture, and quiet emotional resonance
+						RAAJLAKSHMI is an Indian contemporary artist working across ceramics
+						and painting. Drawn to multiple mediums from an early stage in her
+						practice, she explores form, texture, and quiet emotional resonance
 						through minimal visual language.
 					</p>
 					<p className="body-editorial mt-6">
@@ -36,7 +36,7 @@ export function AboutSection() {
 					</p>
 					<p className="body-editorial mt-6">
 						Choosing ceramics and painting as her primary modes of expression,
-						Rajlaxmi creates pieces that investigate simplicity, tactility, and the
+						RAAJLAKSHMI creates pieces that investigate simplicity, tactility, and the
 						subtle poetry of everyday forms.
 					</p>
 				</MotionReveal>

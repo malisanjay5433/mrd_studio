@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FEATURED_SPHERES } from "@/lib/constants/collection";
+import { FEATURED_INSTALLATIONS } from "@/lib/constants/collection";
 import { IMAGE_QUALITY } from "@/lib/constants/landing";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -24,7 +24,7 @@ export function InstallationSection() {
 						id="installation-heading"
 						className="heading-editorial mt-6 text-3xl font-light md:mt-8 md:text-4xl"
 					>
-						Spheres
+						Installations
 					</h2>
 					<Link href="/installations" className="link-underline mt-10 inline-block">
 						View full installation
@@ -32,7 +32,7 @@ export function InstallationSection() {
 				</MotionReveal>
 
 				<div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
-					{FEATURED_SPHERES.map((image, i) => (
+					{FEATURED_INSTALLATIONS.map((image, i) => (
 						<motion.div
 							key={image.src}
 							initial={{ opacity: 0, y: 12 }}

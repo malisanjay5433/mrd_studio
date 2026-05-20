@@ -101,171 +101,260 @@ export const COLLECTION_2015_2020: CollectionPiece[] = [
 	},
 ];
 
-const STUDIO_PHOTO = { width: 5184, height: 3456 } as const;
-
-/** Studio catalogue 2021–2025 — `public/studio2/`. */
+/** Quiet harvest 2021–2025 — `public/quiet-harvest-catalog/`. */
 export const COLLECTION_2021_2025: CollectionPiece[] = [
 	{
-		slug: "bowl-set",
-		title: "Bowl set",
-		description:
-			"Reduction-fired stoneware with copper red glaze — nested bowls scaled for everyday meals.",
+		slug: "quiet-harvest-01",
+		title: "Quiet harvest · 1",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
 		image: {
-			src: "/studio2/studio2-01.jpg",
-			alt: "Bowl set — reduction-fired stoneware, copper red glaze",
-			width: 1218,
-			height: 597,
+			src: "/quiet-harvest-catalog/quiet-harvest-01.png",
+			alt: "Quiet harvest — ceramic still life 1",
+			width: 1402,
+			height: 1122,
 		},
 	},
 	{
-		slug: "casserole",
-		title: "Casserole",
-		description:
-			"A single lidded vessel — cobalt and titanium notes, shaped for slow cooking and serving.",
-		image: { src: "/studio2/studio2-02.jpg", alt: "Casserole — reduction-fired stoneware, titanium glaze", ...STUDIO_PHOTO },
-	},
-	{
-		slug: "casserole-set",
-		title: "Casserole set",
-		description:
-			"Cobalt oxide and titanium glaze — lidded pair for oven-to-table use.",
+		slug: "quiet-harvest-02",
+		title: "Quiet harvest · 2",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
 		image: {
-			src: "/studio2/studio2-03.jpg",
-			alt: "Casserole set — reduction-fired stoneware with cobalt oxide and titanium glaze",
-			...STUDIO_PHOTO,
+			src: "/quiet-harvest-catalog/quiet-harvest-02.png",
+			alt: "Quiet harvest — ceramic still life 2",
+			width: 1122,
+			height: 1402,
 		},
 	},
 	{
-		slug: "cereal-bowl",
-		title: "Cereal bowl",
-		description:
-			"Copper red reduction ware — a shallow rim and steady footing for morning ritual.",
-		image: { src: "/studio2/studio2-04.jpg", alt: "Cereal bowl — reduction-fired stoneware, copper red", ...STUDIO_PHOTO },
-	},
-	{
-		slug: "evening-snack",
-		title: "Evening snack set",
-		description:
-			"Oxidation-fired earthenware with carved matte glaze — pieces for small gatherings.",
+		slug: "quiet-harvest-03",
+		title: "Quiet harvest · 3",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
 		image: {
-			src: "/studio2/studio2-05.jpg",
-			alt: "Evening snack set — oxidation-fired earthenware, carved matt glaze",
-			...STUDIO_PHOTO,
+			src: "/quiet-harvest-catalog/quiet-harvest-03.png",
+			alt: "Quiet harvest — ceramic still life 3",
+			width: 707,
+			height: 532,
 		},
 	},
 	{
-		slug: "irish-coffee",
-		title: "Irish coffee set",
-		description:
-			"Stoneware with copper oxide and titanium glaze — tall cups meant for layered drinks.",
+		slug: "quiet-harvest-04",
+		title: "Quiet harvest · 4",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
 		image: {
-			src: "/studio2/studio2-06.jpg",
-			alt: "Irish coffee set — stoneware with copper oxide and titanium glaze",
-			...STUDIO_PHOTO,
+			src: "/quiet-harvest-catalog/quiet-harvest-04.png",
+			alt: "Quiet harvest — ceramic still life 4",
+			width: 705,
+			height: 542,
 		},
 	},
 	{
-		slug: "jar",
-		title: "Jar",
-		description:
-			"Lidded storage — earthy body glaze with a quiet contrast at the rim.",
-		image: { src: "/studio2/studio2-07.jpg", alt: "Ceramic jar — reduction-fired stoneware with lid", ...STUDIO_PHOTO },
-	},
-	{
-		slug: "milk-pot",
-		title: "Milk pot",
-		description:
-			"A compact pourer — balanced handle and soft satin surface for the table.",
-		image: { src: "/studio2/studio2-08.jpg", alt: "Milk pot — handmade stoneware pourer", ...STUDIO_PHOTO },
-	},
-	{
-		slug: "miniature-pots",
-		title: "Miniature pots",
-		description:
-			"Reduction-fired stoneware — cobalt blue and milky white at intimate scale.",
+		slug: "quiet-harvest-05",
+		title: "Quiet harvest · 5",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
 		image: {
-			src: "/studio2/studio2-09.jpg",
-			alt: "Miniature pots — reduction-fired stoneware, cobalt blue and milky white",
-			...STUDIO_PHOTO,
+			src: "/quiet-harvest-catalog/quiet-harvest-05.png",
+			alt: "Quiet harvest — ceramic still life 5",
+			width: 1402,
+			height: 1122,
 		},
 	},
 	{
-		slug: "mugs",
-		title: "Mugs",
-		description:
-			"Rutile and copper red — generous handles and a glaze that ages beautifully in use.",
+		slug: "quiet-harvest-06",
+		title: "Quiet harvest · 6",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
 		image: {
-			src: "/studio2/studio2-10.jpg",
-			alt: "Handmade mugs — reduction-fired stoneware with rutile and copper red",
-			...STUDIO_PHOTO,
+			src: "/quiet-harvest-catalog/quiet-harvest-06.png",
+			alt: "Quiet harvest — ceramic still life 6",
+			width: 1402,
+			height: 1122,
 		},
 	},
 	{
-		slug: "nesting-bowls",
-		title: "Nesting bowls",
-		description:
-			"Stacking set — consistent clay body with tonal variation across sizes.",
-		image: { src: "/studio2/studio2-11.jpg", alt: "Nesting bowls — stoneware stack", ...STUDIO_PHOTO },
-	},
-	{
-		slug: "salad-bowls",
-		title: "Salad bowls",
-		description:
-			"Cobalt blue with honey glaze — wide rim for sharing salads and fruit.",
+		slug: "quiet-harvest-07",
+		title: "Quiet harvest · 7",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
 		image: {
-			src: "/studio2/studio2-12.jpg",
-			alt: "Salad bowls — stoneware, cobalt blue and honey glaze",
-			...STUDIO_PHOTO,
+			src: "/quiet-harvest-catalog/quiet-harvest-07.png",
+			alt: "Quiet harvest — ceramic still life 7",
+			width: 554,
+			height: 692,
 		},
 	},
 	{
-		slug: "table-vase-barium",
-		title: "Table vase — barium",
-		description:
-			"Vertical form with barium glaze character — for stems and single blooms.",
+		slug: "quiet-harvest-08",
+		title: "Quiet harvest · 8",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
 		image: {
-			src: "/studio2/studio2-13.jpg",
-			alt: "Table vase — reduction-fired stoneware, barium glaze",
-			...STUDIO_PHOTO,
+			src: "/quiet-harvest-catalog/quiet-harvest-08.png",
+			alt: "Quiet harvest — ceramic still life 8",
+			width: 556,
+			height: 696,
 		},
 	},
 	{
-		slug: "table-vase-stony",
-		title: "Table vase — stony",
-		description:
-			"Stony matte surface and grounded silhouette — calm beside dinnerware.",
+		slug: "quiet-harvest-09",
+		title: "Quiet harvest · 9",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
 		image: {
-			src: "/studio2/studio2-14.jpg",
-			alt: "Table vase — stoneware, stony matte glaze",
-			width: 1944,
-			height: 2592,
+			src: "/quiet-harvest-catalog/quiet-harvest-09.png",
+			alt: "Quiet harvest — ceramic still life 9",
+			width: 640,
+			height: 509,
 		},
 	},
 	{
-		slug: "tea-light",
-		title: "Tea light",
-		description:
-			"A small holder for candlelight — thin walls and a soft flame glow.",
-		image: { src: "/studio2/studio2-15.jpg", alt: "Tea light holder — handmade stoneware", ...STUDIO_PHOTO },
-	},
-	{
-		slug: "tea-snack-set",
-		title: "Tea snack set",
-		description:
-			"Reduction-fired editorial set — cups and plates composed for quiet hospitality.",
+		slug: "quiet-harvest-10",
+		title: "Quiet harvest · 10",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
 		image: {
-			src: "/studio2/studio2-16.jpg",
-			alt: "Tea snack set — reduction-fired stoneware tableware",
-			width: 3456,
-			height: 5184,
+			src: "/quiet-harvest-catalog/quiet-harvest-10.png",
+			alt: "Quiet harvest — ceramic still life 10",
+			width: 1402,
+			height: 1122,
 		},
 	},
 	{
-		slug: "twin-vase",
-		title: "Twin vase",
-		description:
-			"Paired necks, shared base — a sculptural accent for the table or shelf.",
-		image: { src: "/studio2/studio2-17.jpg", alt: "Twin vase — handmade stoneware vessel", ...STUDIO_PHOTO },
+		slug: "quiet-harvest-11",
+		title: "Quiet harvest · 11",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-11.png",
+			alt: "Quiet harvest — ceramic still life 11",
+			width: 1183,
+			height: 1330,
+		},
+	},
+	{
+		slug: "quiet-harvest-12",
+		title: "Quiet harvest · 12",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-12.png",
+			alt: "Quiet harvest — ceramic still life 12",
+			width: 1402,
+			height: 1122,
+		},
+	},
+	{
+		slug: "quiet-harvest-13",
+		title: "Quiet harvest · 13",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-13.png",
+			alt: "Quiet harvest — ceramic still life 13",
+			width: 1402,
+			height: 1122,
+		},
+	},
+	{
+		slug: "quiet-harvest-14",
+		title: "Quiet harvest · 14",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-14.png",
+			alt: "Quiet harvest — ceramic still life 14",
+			width: 1402,
+			height: 1122,
+		},
+	},
+	{
+		slug: "quiet-harvest-15",
+		title: "Quiet harvest · 15",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-15.png",
+			alt: "Quiet harvest — ceramic still life 15",
+			width: 686,
+			height: 545,
+		},
+	},
+	{
+		slug: "quiet-harvest-16",
+		title: "Quiet harvest · 16",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-16.png",
+			alt: "Quiet harvest — ceramic still life 16",
+			width: 695,
+			height: 537,
+		},
+	},
+	{
+		slug: "quiet-harvest-17",
+		title: "Quiet harvest · 17",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-17.png",
+			alt: "Quiet harvest — ceramic still life 17",
+			width: 701,
+			height: 555,
+		},
+	},
+	{
+		slug: "quiet-harvest-18",
+		title: "Quiet harvest · 18",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-18.png",
+			alt: "Quiet harvest — ceramic still life 18",
+			width: 1402,
+			height: 1122,
+		},
+	},
+	{
+		slug: "quiet-harvest-19",
+		title: "Quiet harvest · 19",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-19.jpg",
+			alt: "Quiet harvest — ceramic still life 19",
+			width: 411,
+			height: 418,
+		},
+	},
+	{
+		slug: "quiet-harvest-20",
+		title: "Quiet harvest · 20",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-20.jpg",
+			alt: "Quiet harvest — ceramic still life 20",
+			width: 406,
+			height: 356,
+		},
+	},
+	{
+		slug: "quiet-harvest-21",
+		title: "Quiet harvest · 21",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-21.jpg",
+			alt: "Quiet harvest — ceramic still life 21",
+			width: 397,
+			height: 375,
+		},
+	},
+	{
+		slug: "quiet-harvest-22",
+		title: "Quiet harvest · 22",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-22.png",
+			alt: "Quiet harvest — ceramic still life 22",
+			width: 467,
+			height: 561,
+		},
+	},
+	{
+		slug: "quiet-harvest-23",
+		title: "Quiet harvest · 23",
+		description: "Quiet harvest series — studio ceramics 2021–2025.",
+		image: {
+			src: "/quiet-harvest-catalog/quiet-harvest-23.jpg",
+			alt: "Quiet harvest — ceramic still life 23",
+			width: 467,
+			height: 560,
+		},
 	},
 ];
 
@@ -287,30 +376,38 @@ export const COLLECTION_ERAS = [
 		description:
 			"Dinnerware, vessels, and kiln-fired objects — the full studio catalogue with copper red, cobalt, and titanium glazes.",
 		href: "/collection/2021-2025",
-		cover: COLLECTION_2021_2025[15].image,
+		cover: COLLECTION_2021_2025[0].image,
 		count: COLLECTION_2021_2025.length,
 	},
 ] as const;
 
-const SPHERE_COUNT = 58;
-
-/** Sphere installation studies — `public/spheres/` from Projects archive. */
-export const SPHERE_IMAGES: CollectionPiece["image"][] = Array.from(
-	{ length: SPHERE_COUNT },
-	(_, i) => {
-		const n = String(i + 1).padStart(2, "0");
-		return {
-			src: `/spheres/sphere-${n}.jpg`,
-			alt: `Sphere installation — sculptural stoneware study ${i + 1}`,
-			width: STUDIO_PHOTO.width,
-			height: STUDIO_PHOTO.height,
-		};
+/** Installation photography — `public/installations/`. */
+export const INSTALLATION_IMAGES: CollectionPiece["image"][] = [
+	{
+		src: "/installations/installation-01.png",
+		alt: "Installation — sculptural ceramics in situ",
+		width: 1122,
+		height: 1402,
 	},
-);
+	{
+		src: "/installations/installation-02.png",
+		alt: "Installation — stoneware spheres and vessels",
+		width: 1023,
+		height: 1537,
+	},
+	{
+		src: "/installations/installation-03.png",
+		alt: "Installation — ceramic forms on plinth",
+		width: 1122,
+		height: 1040,
+	},
+];
 
-/** Homepage installation preview — curated sphere indices. */
-export const FEATURED_SPHERE_INDICES = [5, 11, 18, 24, 31, 40] as const;
+/** @deprecated Use INSTALLATION_IMAGES */
+export const SPHERE_IMAGES = INSTALLATION_IMAGES;
 
-export const FEATURED_SPHERES = FEATURED_SPHERE_INDICES.map((i) => ({
-	...SPHERE_IMAGES[i - 1],
-}));
+/** Homepage installation preview — all installation images. */
+export const FEATURED_INSTALLATIONS = INSTALLATION_IMAGES;
+
+/** @deprecated Use FEATURED_INSTALLATIONS */
+export const FEATURED_SPHERES = FEATURED_INSTALLATIONS;

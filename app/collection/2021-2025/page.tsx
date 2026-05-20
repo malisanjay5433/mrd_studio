@@ -35,7 +35,7 @@ export default function Collection2021Page() {
 					<CollectionGrid items={COLLECTION_2021_2025} />
 					<MotionReveal className="mt-12 flex flex-wrap gap-3">
 						<Button href="/collection/2015-2020" variant="secondary">
-							2015–2020
+							Tableware · 2015–2020
 						</Button>
 						<Button href="/collection" variant="ghostOnDark">
 							All collections

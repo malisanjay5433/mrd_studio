@@ -1,4 +1,4 @@
-# Rajlaxmi
+# RAAJLAKSHMI
 
 Editorial ceramics portfolio — [Next.js](https://nextjs.org/) (App Router), [Tailwind CSS](https://tailwindcss.com/), [Contentlayer](https://www.contentlayer.dev/), optional [Upstash Redis](https://upstash.com/) for pageview counts. Deploy anywhere that runs Node (e.g. [Vercel](https://vercel.com/)).
 

@@ -5,10 +5,10 @@ import {
 } from "@/lib/constants/collection";
 
 export const SITE = {
-	artist: "Rajlaxmi Sonawane",
-	name: "Rajlaxmi",
+	artist: "RAAJLAKSHMI",
+	name: "RAAJLAKSHMI",
 	description:
-		"Handcrafted ceramics and contemporary art by Rajlaxmi Sonawane.",
+		"Handcrafted ceramics and contemporary art by RAAJLAKSHMI.",
 } as const;
 
 /** Default aspect for catalogue stills when a piece omits explicit dimensions. */
@@ -25,7 +25,7 @@ export const IMAGE_QUALITY = {
 } as const;
 
 export const STUDIO_FRAMES = {
-	hero: "/tableware/tableware-07.png",
+	hero: "/hero/hero-banner.png",
 	ctaAtmosphere: "/quiet-harvest/quiet-harvest-11.png",
 } as const;
 
@@ -35,7 +35,6 @@ export const PRIMARY_NAV: NavItem[] = [
 	{ label: "About me", href: "/#about" },
 	{ label: "Collection", href: "/collection" },
 	{ label: "Installation", href: "/installations" },
-	{ label: "Gallery", href: "/#gallery" },
 	{ label: "Contact", href: "/contact" },
 ];
 
@@ -147,9 +146,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const HERO_IMAGE = {
 	src: STUDIO_FRAMES.hero,
-	alt: "Serving set — stoneware tableware, Rajlaxmi",
-	width: 1409,
-	height: 1116,
+	alt: "Marbled ceramic spheres in sand — installation by RAAJLAKSHMI",
+	width: 1024,
+	height: 949,
 } as const;
 
 export const CTA_BACKDROP = {

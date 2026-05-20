@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { SectionLabel } from "@/components/ui/section-label";
 import { StaticImage } from "@/components/ui/static-image";
-import { SPHERE_IMAGES } from "@/lib/constants/collection";
+import { INSTALLATION_IMAGES } from "@/lib/constants/collection";
 import { IMAGE_QUALITY, SITE } from "@/lib/constants/landing";
 
 export const metadata: Metadata = {
 	title: "Installation",
-	description: `${SITE.name} — sphere installation studies.`,
+	description: `${SITE.name} — installation photography.`,
 };
 
 export default function InstallationsPage() {
@@ -29,7 +29,7 @@ export default function InstallationsPage() {
 							id="installation-heading"
 							className="heading-editorial mt-4 text-3xl font-light md:text-4xl"
 						>
-							Spheres
+							Installations
 						</h1>
 					</MotionReveal>
 
@@ -37,7 +37,7 @@ export default function InstallationsPage() {
 						className="mt-10 columns-2 gap-4 sm:columns-2 md:columns-3 md:gap-6"
 						role="list"
 					>
-						{SPHERE_IMAGES.map((image) => (
+						{INSTALLATION_IMAGES.map((image) => (
 							<div
 								key={image.src}
 								role="listitem"

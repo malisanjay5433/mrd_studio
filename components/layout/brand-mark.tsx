@@ -74,7 +74,7 @@ export function BrandMark({
 				/>
 			</svg>
 			<span
-				className={`font-display font-medium ${wordClass[size]} ${textMain} max-w-[12rem] text-balance sm:max-w-none`}
+				className={`font-display font-medium ${wordClass[size]} ${textMain} max-w-[14rem] text-balance sm:max-w-none`}
 			>
 				{SITE.name}
 			</span>
