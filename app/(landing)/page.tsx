@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { HeaderFilmstrip } from "@/components/layout/header-filmstrip";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { AboutSection } from "@/components/sections/about-section";
@@ -53,7 +52,6 @@ export default function LandingPage() {
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
 			/>
 			<SiteHeader />
-			<HeaderFilmstrip />
 			<main className="min-h-screen">
 				<HeroSection />
 				<AboutSection />

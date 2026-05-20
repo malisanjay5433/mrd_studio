@@ -61,22 +61,13 @@ export function HeroSection() {
 					animate="show"
 					className="tone-dark max-w-[1600px]"
 				>
-					<motion.p variants={item} className="label-caps">
-						{SITE.name}
-					</motion.p>
 					<motion.h1
 						id="hero-heading"
 						variants={item}
 						className="heading-display-xl mt-6 max-w-4xl text-balance md:mt-8 lg:max-w-5xl"
 					>
-						{SITE.tagline}
+						{SITE.name}
 					</motion.h1>
-					<motion.p
-						variants={item}
-						className="body-editorial mt-8 max-w-lg md:mt-10"
-					>
-						{SITE.description}
-					</motion.p>
 					<motion.div
 						variants={item}
 						className="mt-10 flex flex-wrap items-center gap-4 md:mt-12 md:gap-6"
@@ -89,7 +80,7 @@ export function HeroSection() {
 							variant="ghostOnDark"
 							className="!border-brand-white/20 !bg-transparent hover:!bg-brand-white/8"
 						>
-							Studio inquiry
+							Contact
 						</Button>
 					</motion.div>
 				</motion.div>

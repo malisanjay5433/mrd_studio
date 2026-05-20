@@ -8,8 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
 		id: "/",
 		name: `${SITE.name} — Handmade ceramics`,
 		short_name: SITE.name,
-		description:
-			"Handcrafted dinnerware and studio ceramics — quiet luxury, earthy glazes, and forms shaped for daily ritual.",
+		description: SITE.description,
 		start_url: "/",
 		scope: "/",
 		display: "standalone",

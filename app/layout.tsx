@@ -22,8 +22,7 @@ export const metadata: Metadata = {
 		default: `${SITE.name} — Handmade ceramics`,
 		template: `%s | ${SITE.name}`,
 	},
-	description:
-		`${SITE.name} — handcrafted dinnerware and studio ceramics. Quiet luxury, earthy glazes, and forms shaped for daily ritual.`,
+	description: SITE.description,
 	applicationName: SITE.name,
 	appleWebApp: {
 		capable: true,
@@ -32,8 +31,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		title: `${SITE.name} — Handmade ceramics`,
-		description:
-			"Editorial ceramics studio — tableware, objects, and kiln-fired work for the home.",
+		description: SITE.description,
 		type: "website",
 		locale: "en-US",
 	},

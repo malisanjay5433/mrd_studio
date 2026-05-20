@@ -1,11 +1,7 @@
 import Image from "next/image";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { Button } from "@/components/ui/button";
-import {
-	CTA_BACKDROP,
-	IMAGE_QUALITY,
-	SITE,
-} from "@/lib/constants/landing";
+import { CTA_BACKDROP, IMAGE_QUALITY } from "@/lib/constants/landing";
 import { GrainOverlay } from "@/components/ui/grain-overlay";
 
 export function CtaSection() {
@@ -33,18 +29,13 @@ export function CtaSection() {
 
 			<div className="tone-dark relative z-10 mx-auto max-w-3xl text-center">
 				<MotionReveal>
-					<p className="label-caps">{SITE.name}</p>
 					<h2
 						id="cta-heading"
-						className="mt-8 font-display text-3xl font-light leading-[1.15] tracking-[-0.02em] md:text-4xl lg:text-[2.75rem]"
+						className="sr-only"
 					>
-						Commission a set, book a visit, or explore the collection.
+						Contact
 					</h2>
-					<p className="body-editorial mx-auto mt-8 max-w-lg md:mt-10">
-						Timelines follow the kiln. We reply to studio inquiries within a few
-						days.
-					</p>
-					<div className="mt-12 flex flex-wrap justify-center gap-4 md:gap-5">
+					<div className="flex flex-wrap justify-center gap-4 md:gap-5">
 						<Button href="/contact" variant="ghostOnDark">
 							Get in touch
 						</Button>

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { HeaderFilmstrip } from "@/components/layout/header-filmstrip";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { Button } from "@/components/ui/button";
@@ -18,7 +17,6 @@ export default function InstallationsPage() {
 	return (
 		<>
 			<SiteHeader />
-			<HeaderFilmstrip />
 			<main className="min-h-screen bg-brand-paper">
 				<section
 					aria-labelledby="installations-heading"
@@ -33,10 +31,6 @@ export default function InstallationsPage() {
 							>
 								Spheres
 							</h1>
-							<p className="body-editorial mt-8 max-w-xl">
-								A serial study in roundness — hand-built stoneware spheres
-								exploring volume, glaze, and the slow geometry of the kiln.
-							</p>
 						</MotionReveal>
 
 						<div

@@ -26,10 +26,6 @@ export function InstallationSection() {
 					>
 						Spheres
 					</h2>
-					<p className="body-editorial mt-10 max-w-xl">
-						A serial study in roundness — sculptural stoneware spheres exploring
-						volume, glaze, and the geometry of the kiln.
-					</p>
 					<Link href="/installations" className="link-underline mt-10 inline-block">
 						View full installation
 					</Link>

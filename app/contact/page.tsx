@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AtSign, Mail, MapPin } from "lucide-react";
-import { HeaderFilmstrip } from "@/components/layout/header-filmstrip";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { GrainOverlay } from "@/components/ui/grain-overlay";
@@ -11,7 +10,7 @@ import { SITE, SOCIAL_LINKS } from "@/lib/constants/landing";
 
 export const metadata: Metadata = {
 	title: "Contact",
-	description: `Reach ${SITE.name} for commissions, wholesale, studio visits, and inquiries.`,
+	description: `Contact ${SITE.name}.`,
 };
 
 const studioVisitHref = `${SOCIAL_LINKS[1].href}?subject=${encodeURIComponent("Studio visit request")}`;
@@ -43,7 +42,6 @@ export default function ContactPage() {
 	return (
 		<>
 			<SiteHeader />
-			<HeaderFilmstrip />
 			<main className="min-h-screen">
 				<section
 					aria-labelledby="contact-heading"
@@ -57,27 +55,8 @@ export default function ContactPage() {
 								id="contact-heading"
 								className="heading-editorial mt-6 text-3xl font-light md:mt-8 md:text-4xl lg:text-[2.35rem]"
 							>
-								Commissions &amp; studio inquiries
+								Contact
 							</h1>
-							<p className="body-editorial mt-10">
-								For custom tableware, trade, wholesale, installation commissions, or
-								studio visits, send a note with your timeline and how the pieces
-								will be used. Browse the{" "}
-								<Link
-									href="/collection"
-									className="border-b border-brand-clay/40 transition hover:border-brand-terracotta hover:text-brand-terracotta"
-								>
-									collection
-								</Link>{" "}
-								or{" "}
-								<Link
-									href="/installations"
-									className="border-b border-brand-clay/40 transition hover:border-brand-terracotta hover:text-brand-terracotta"
-								>
-									installations
-								</Link>{" "}
-								before writing. Restocks are announced on Instagram first.
-							</p>
 						</MotionReveal>
 
 						<ul className="relative mt-14 grid grid-cols-1 gap-6 sm:grid-cols-3 lg:gap-10">

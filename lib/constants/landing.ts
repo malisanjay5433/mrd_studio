@@ -6,9 +6,8 @@ import {
 
 export const SITE = {
 	name: "Rajlaxmi",
-	tagline: "Handcrafted ceramics for slow living",
 	description:
-		"Editorial studio ceramics — dinnerware, vessels, and kiln-fired objects with earthy glazes and quiet luxury.",
+		"Contemporary ceramics and painting by Rajlaxmi Sonawane.",
 } as const;
 
 /** Default aspect for catalogue stills when a piece omits explicit dimensions. */
@@ -22,17 +21,7 @@ export const IMAGE_QUALITY = {
 	section: 72,
 	gallery: 68,
 	ctaBackdrop: 60,
-	headerStrip: 58,
 } as const;
-
-/** Header filmstrip — quiet harvest editorial frames. */
-export const HEADER_FILMSTRIP = [
-	"/quiet-harvest/quiet-harvest-05.png",
-	"/quiet-harvest/quiet-harvest-10.png",
-	"/quiet-harvest/quiet-harvest-12.png",
-	"/quiet-harvest/quiet-harvest-18.png",
-	"/quiet-harvest/quiet-harvest-22.png",
-] as const;
 
 export const STUDIO_FRAMES = {
 	hero: "/tableware/tableware-07.png",
@@ -42,26 +31,21 @@ export const STUDIO_FRAMES = {
 export type NavItem = { label: string; href: string };
 
 export const PRIMARY_NAV: NavItem[] = [
+	{ label: "About me", href: "/#about" },
 	{ label: "Collection", href: "/collection" },
 	{ label: "Installation", href: "/installations" },
-	{ label: "Gallery", href: "#gallery" },
+	{ label: "Gallery", href: "/#gallery" },
 	{ label: "Contact", href: "/contact" },
 ];
 
 export const FOOTER_NAV: NavItem[] = [
+	{ label: "About me", href: "/#about" },
 	{ label: "Collection", href: "/collection" },
 	{ label: "2015–2020", href: "/collection/2015-2020" },
 	{ label: "2021–2025", href: "/collection/2021-2025" },
 	{ label: "Installation", href: "/installations" },
 	{ label: "Contact", href: "/contact" },
 ];
-
-export const FOOTER_LEGAL = {
-	copyright:
-		"All images, artwork, and written content on this site are © Rajlaxmi Sonawane. Reproduction, distribution, or use without prior written permission is prohibited.",
-	disclaimer:
-		"Glaze colours and dimensions may vary slightly from photographs. Commissions are subject to kiln availability and agreed timelines.",
-} as const;
 
 export type ProductItem = {
 	title: string;

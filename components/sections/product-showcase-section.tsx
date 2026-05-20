@@ -25,10 +25,6 @@ export function ProductShowcaseSection() {
 					>
 						Tableware · 2015–2020
 					</h2>
-					<p className="body-editorial mt-8 max-w-xl">
-						An edit from the first studio years — serving sets, glaze studies, and
-						forms composed for slow meals.
-					</p>
 				</MotionReveal>
 
 				<ul className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
@@ -59,12 +55,6 @@ export function ProductShowcaseSection() {
 										<h3 className="font-display text-lg font-medium tracking-tight text-brand-ink">
 											{product.title}
 										</h3>
-										<p className="body-editorial mt-3 text-sm text-brand-muted">
-											{product.description}
-										</p>
-										<span className="mt-4 inline-block text-[10px] font-semibold uppercase tracking-[0.2em] text-brand-muted">
-											Discover →
-										</span>
 									</div>
 								</Link>
 							</motion.div>

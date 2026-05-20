@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { HeaderFilmstrip } from "@/components/layout/header-filmstrip";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { MotionReveal } from "@/components/ui/motion-reveal";
@@ -18,7 +17,6 @@ export default function CollectionHubPage() {
 	return (
 		<>
 			<SiteHeader />
-			<HeaderFilmstrip />
 			<main className="min-h-screen bg-brand-paper">
 				<section
 					aria-labelledby="collection-hub-heading"
@@ -31,12 +29,8 @@ export default function CollectionHubPage() {
 								id="collection-hub-heading"
 								className="heading-editorial mt-5 text-3xl font-light md:mt-6 md:text-4xl lg:text-[2.65rem]"
 							>
-								Two decades of work
+								Collection
 							</h1>
-							<p className="body-editorial mt-8 max-w-xl">
-								Explore tableware from 2015–2020 and the studio catalogue from
-								2021–2025 — each era with its own glazes, forms, and kiln stories.
-							</p>
 						</MotionReveal>
 
 						<ul className="mt-14 grid list-none gap-10 md:grid-cols-2 md:gap-12">
@@ -65,9 +59,6 @@ export default function CollectionHubPage() {
 												</h2>
 												<p className="mt-2 text-xs uppercase tracking-[0.2em] text-brand-muted">
 													{era.count} pieces
-												</p>
-												<p className="body-editorial mt-4 text-sm text-brand-muted">
-													{era.description}
 												</p>
 											</div>
 										</Link>

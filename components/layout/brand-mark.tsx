@@ -18,12 +18,6 @@ const wordClass = {
 	lg: "text-lg tracking-[0.1em] md:text-2xl md:tracking-[0.12em]",
 };
 
-const subClass = {
-	sm: "text-[8px] tracking-[0.32em] md:text-[9px]",
-	md: "text-[9px] tracking-[0.32em] md:text-[10px]",
-	lg: "text-[10px] tracking-[0.34em] md:text-xs",
-};
-
 const iconSize = {
 	sm: "h-8 w-8 md:h-9 md:w-9",
 	md: "h-10 w-10 md:h-11 md:w-11",
@@ -38,9 +32,6 @@ export function BrandMark({
 	const stroke = variant === "light" ? "#FFFFFF" : "#171717";
 	const textMain =
 		variant === "light" ? "text-brand-white" : "text-brand-charcoal";
-	const textSub =
-		variant === "light" ? "text-brand-sand" : "text-brand-clay";
-
 	return (
 		<div className={`flex flex-col items-start ${textScale[size]} ${className}`}>
 			<svg
@@ -86,11 +77,6 @@ export function BrandMark({
 					className={`font-display font-medium ${wordClass[size]} ${textMain} max-w-[12rem] text-balance sm:max-w-none`}
 				>
 					{SITE.name}
-				</span>
-				<span
-					className={`mt-2 font-semibold uppercase ${subClass[size]} ${textSub}`}
-				>
-					Studio
 				</span>
 			</div>
 		</div>

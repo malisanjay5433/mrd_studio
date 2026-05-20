@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { HeaderFilmstrip } from "@/components/layout/header-filmstrip";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { CollectionGrid } from "@/components/collection/collection-grid";
@@ -18,7 +17,6 @@ export default function Collection2015Page() {
 	return (
 		<>
 			<SiteHeader />
-			<HeaderFilmstrip />
 			<main className="min-h-screen bg-brand-paper">
 				<section
 					aria-labelledby="era-2015-heading"
@@ -31,12 +29,8 @@ export default function Collection2015Page() {
 								id="era-2015-heading"
 								className="heading-editorial mt-5 text-3xl font-light md:mt-6 md:text-4xl lg:text-[2.65rem]"
 							>
-								Tableware
+								2015–2020
 							</h1>
-							<p className="body-editorial mt-8 max-w-xl">
-								Early studio tableware — reduction-fired stoneware, editorial sets,
-								and glaze studies from the first years of practice.
-							</p>
 						</MotionReveal>
 						<CollectionGrid items={COLLECTION_2015_2020} />
 						<MotionReveal className="mt-16 flex flex-wrap gap-4 md:mt-20">

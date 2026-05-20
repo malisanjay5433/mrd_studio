@@ -24,10 +24,6 @@ export function GallerySection() {
 					>
 						Quiet harvest
 					</h2>
-					<p className="body-editorial mt-8 max-w-xl">
-						Colour studies from 2020–2025 — cream and sand through sage, teal,
-						olive, and moss — compositions in soft light and organic spacing.
-					</p>
 				</MotionReveal>
 
 				<div

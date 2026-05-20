@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { HeaderFilmstrip } from "@/components/layout/header-filmstrip";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { CollectionGrid } from "@/components/collection/collection-grid";
@@ -18,7 +17,6 @@ export default function Collection2021Page() {
 	return (
 		<>
 			<SiteHeader />
-			<HeaderFilmstrip />
 			<main className="min-h-screen bg-brand-paper">
 				<section
 					aria-labelledby="era-2021-heading"
@@ -31,12 +29,8 @@ export default function Collection2021Page() {
 								id="era-2021-heading"
 								className="heading-editorial mt-5 text-3xl font-light md:mt-6 md:text-4xl lg:text-[2.65rem]"
 							>
-								Studio catalogue
+								2021–2025
 							</h1>
-							<p className="body-editorial mt-8 max-w-xl">
-								Dinnerware lines and vessels from the kiln — each entry lists clay,
-								glaze, and how we imagine it living on your table.
-							</p>
 						</MotionReveal>
 						<CollectionGrid items={COLLECTION_2021_2025} />
 						<MotionReveal className="mt-16 flex flex-wrap gap-4 md:mt-20">

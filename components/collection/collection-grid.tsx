@@ -33,9 +33,6 @@ export function CollectionGrid({ items }: CollectionGridProps) {
 									<h2 className="font-display text-lg font-medium tracking-tight text-brand-ink">
 										{item.title}
 									</h2>
-									<p className="body-editorial mt-3 text-sm text-brand-muted">
-										{item.description}
-									</p>
 								</div>
 							</div>
 						</article>
