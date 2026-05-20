@@ -10,46 +10,34 @@ export function AboutSection() {
 			className="surface-light relative scroll-mt-24 border-b border-brand-line"
 		>
 			<GrainOverlay opacity="subtle" />
-			<div className="relative mx-auto grid max-w-[1600px] gap-14 px-5 py-20 md:grid-cols-2 md:gap-20 md:px-10 md:py-28 lg:gap-32">
-				<MotionReveal>
-					<div className="min-w-0">
-							<SectionLabel>About us</SectionLabel>
-							<h2
-								id="about-heading"
-								className="heading-editorial mt-6 text-3xl font-light md:mt-8 md:text-4xl lg:text-[2.35rem]"
-							>
-								Rajlaxmi Sonawane
-							</h2>
-							<p className="body-editorial mt-10">
-								Rajlaxmi Sonawane is a contemporary artist working across
-								ceramics, painting, and mixed media through a minimal and tactile
-								approach. She holds a Bachelor&apos;s degree in Fine Art from
-								Mumbai and later pursued a Master&apos;s in Contemporary Art
-								Market from Milan. Having lived and worked in Europe, her practice
-								evolved through exposure to contemporary art, design, and
-								material-driven processes.
-							</p>
-					</div>
-				</MotionReveal>
-				<MotionReveal delay={0.08}>
-					<div className="min-w-0 md:pt-12 lg:pt-20">
-							<SectionLabel>Practice</SectionLabel>
-							<h2 className="heading-editorial mt-6 text-3xl font-light md:mt-8 md:text-4xl lg:text-[2.35rem]">
-								Clay, emotion, and craft
-							</h2>
-							<p className="body-editorial mt-10">
-								Drawn to various mediums, clay remains her most intuitive and
-								favourite medium to work with. Her largely conceptual practice
-								explores themes of mental health, emotion, and inner human
-								experience through understated forms, subtle textures, and quiet
-								visual language.
-							</p>
-							<p className="body-editorial mt-6">
-								While rooted in contemporary expression, her work also reflects a
-								deep appreciation for traditional craftsmanship and the enduring
-								legacy of ceramics — one of the oldest crafts known to humanity.
-							</p>
-					</div>
+			<div className="relative mx-auto max-w-[1600px] px-5 py-20 md:px-10 md:py-28">
+				<MotionReveal className="max-w-2xl">
+					<SectionLabel>About me</SectionLabel>
+					<h2
+						id="about-heading"
+						className="heading-editorial mt-6 text-3xl font-light md:mt-8 md:text-4xl lg:text-[2.35rem]"
+					>
+						Rajlaxmi Sonawane
+					</h2>
+					<p className="body-editorial mt-10">
+						Rajlaxmi Sonawane is an Indian contemporary artist working across
+						ceramics and painting. Drawn to multiple mediums from an early stage in
+						her practice, she explores form, texture, and quiet emotional resonance
+						through minimal visual language.
+					</p>
+					<p className="body-editorial mt-6">
+						Having lived and worked in Europe, her practice has evolved through
+						exposure to diverse artistic and cultural environments, shaping a
+						sensibility that balances restraint with intimacy. Her work often
+						reflects a dialogue between materiality and stillness — where
+						handcrafted objects become contemplative forms rather than decorative
+						ones.
+					</p>
+					<p className="body-editorial mt-6">
+						Choosing ceramics and painting as her primary modes of expression,
+						Rajlaxmi creates pieces that investigate simplicity, tactility, and the
+						subtle poetry of everyday forms.
+					</p>
 				</MotionReveal>
 			</div>
 		</section>
