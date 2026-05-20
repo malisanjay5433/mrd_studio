@@ -133,11 +133,6 @@ export type SocialLink = {
 
 export const SOCIAL_LINKS: SocialLink[] = [
 	{
-		label: "Instagram",
-		href: "https://instagram.com/mrud.studio",
-		handle: "@mrud.studio",
-	},
-	{
 		label: "Email",
 		href: "mailto:hello@example.com",
 		handle: "hello@example.com",

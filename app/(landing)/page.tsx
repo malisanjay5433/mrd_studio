@@ -42,7 +42,7 @@ export default function LandingPage() {
 		name: SITE.name,
 		description: SITE.description,
 		url,
-		sameAs: ["https://instagram.com/mrud.studio"],
+		sameAs: [],
 	};
 
 	return (
