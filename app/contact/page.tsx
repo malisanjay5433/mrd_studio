@@ -3,7 +3,6 @@ import Link from "next/link";
 import { AtSign, Mail, MapPin } from "lucide-react";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { GrainOverlay } from "@/components/ui/grain-overlay";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { SectionLabel } from "@/components/ui/section-label";
 import { SITE, SOCIAL_LINKS } from "@/lib/constants/landing";
@@ -43,60 +42,61 @@ export default function ContactPage() {
 		<>
 			<SiteHeader />
 			<main className="min-h-screen">
-				<section
-					aria-labelledby="contact-heading"
-					className="surface-light relative scroll-mt-24 border-b border-brand-line"
-				>
-					<GrainOverlay opacity="subtle" />
-					<div className="relative mx-auto max-w-[1600px] px-5 py-20 md:px-10 md:py-28">
-						<MotionReveal className="max-w-2xl">
-							<SectionLabel>Contact</SectionLabel>
-							<h1
-								id="contact-heading"
-								className="heading-editorial mt-6 text-3xl font-light md:mt-8 md:text-4xl lg:text-[2.35rem]"
-							>
-								Contact
-							</h1>
-						</MotionReveal>
+			<section
+				aria-labelledby="contact-heading"
+				className="surface-elevated scroll-mt-24 px-5 py-12 md:px-10 md:py-16"
+			>
+				<div className="mx-auto max-w-[1600px]">
+					<MotionReveal>
+						<SectionLabel>Contact</SectionLabel>
+						<h1
+							id="contact-heading"
+							className="heading-editorial mt-4 text-3xl font-light md:text-4xl"
+						>
+							Contact
+						</h1>
+					</MotionReveal>
 
-						<ul className="relative mt-14 grid grid-cols-1 gap-6 sm:grid-cols-3 lg:gap-10">
-							{channels.map((item, i) => {
-								const Icon = item.icon;
-								return (
-									<li key={item.label}>
-										<MotionReveal delay={i * 0.06}>
-											<Link
-												href={item.href}
-												target={
-													item.href.startsWith("http") ? "_blank" : undefined
-												}
-												rel={
-													item.href.startsWith("http")
-														? "noopener noreferrer"
-														: undefined
-												}
-												className="group relative flex flex-col items-center gap-5 rounded-sm border border-brand-clay/18 bg-brand-white/70 px-6 py-12 text-center shadow-soft transition-all duration-500 ease-luxury hover:-translate-y-0.5 hover:border-brand-terracotta/45 hover:shadow-lift md:gap-7 md:py-16 lg:py-20"
-											>
+					<ul className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+						{channels.map((item, i) => {
+							const Icon = item.icon;
+							return (
+								<li key={item.label}>
+									<MotionReveal delay={i * 0.06}>
+										<Link
+											href={item.href}
+											target={
+												item.href.startsWith("http") ? "_blank" : undefined
+											}
+											rel={
+												item.href.startsWith("http")
+													? "noopener noreferrer"
+													: undefined
+											}
+											className="group flex flex-col items-center gap-4 px-5 py-10 text-center"
+										>
+											<div className="card-luxury flex w-full flex-col items-center gap-4 px-4 py-10">
 												<span
-													className="flex h-12 w-12 items-center justify-center rounded-full border border-brand-clay/22 bg-brand-beige text-brand-charcoal transition duration-500 group-hover:border-brand-terracotta group-hover:bg-brand-terracotta group-hover:text-brand-white"
+													className="flex h-12 w-12 items-center justify-center rounded-full border border-brand-line bg-brand-charcoal/80 text-brand-terracotta transition duration-500 group-hover:border-brand-terracotta group-hover:bg-brand-terracotta/15"
 													aria-hidden
 												>
 													<Icon size={20} strokeWidth={1.25} />
 												</span>
-												<span className="font-display text-lg font-medium tracking-tight text-brand-charcoal transition duration-500 group-hover:text-brand-terracotta md:text-xl">
+												<span className="font-display text-lg font-medium tracking-tight text-brand-white transition group-hover:text-brand-terracotta">
 													{item.handle}
 												</span>
-												<span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-brand-clay/75 transition duration-500 group-hover:text-brand-charcoal">
+												<span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-brand-clay">
 													{item.label}
 												</span>
-											</Link>
-										</MotionReveal>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-				</section>
+											</div>
+										</Link>
+									</MotionReveal>
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+			</section>
 			</main>
 			<SiteFooter />
 		</>

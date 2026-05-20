@@ -8,7 +8,7 @@ export function CtaSection() {
 	return (
 		<section
 			aria-labelledby="cta-heading"
-			className="relative overflow-hidden border-b border-brand-rule px-5 py-24 md:px-10 md:py-32"
+			className="relative overflow-hidden border-b border-brand-line px-5 py-24 md:px-10 md:py-32"
 		>
 			<div className="pointer-events-none absolute inset-0" aria-hidden>
 				<Image
@@ -20,19 +20,16 @@ export function CtaSection() {
 					sizes="100vw"
 				/>
 			</div>
+			<div className="absolute inset-0 bg-brand-charcoal/92" aria-hidden />
+			<GrainOverlay opacity="subtle" />
 			<div
-				className="absolute inset-0 bg-brand-ink/92"
+				className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-charcoal/60 to-transparent"
 				aria-hidden
 			/>
-			<GrainOverlay opacity="subtle" />
-			<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-charcoal/60 to-transparent" />
 
 			<div className="tone-dark relative z-10 mx-auto max-w-3xl text-center">
 				<MotionReveal>
-					<h2
-						id="cta-heading"
-						className="sr-only"
-					>
+					<h2 id="cta-heading" className="sr-only">
 						Contact
 					</h2>
 					<div className="flex flex-wrap justify-center gap-4 md:gap-5">

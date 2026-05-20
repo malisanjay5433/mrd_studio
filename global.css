@@ -3,16 +3,19 @@
 @tailwind utilities;
 
 @layer base {
-  .text-edge-outline {
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.08);
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-brand-charcoal text-brand-sand antialiased;
   }
 
   ::selection {
-    background-color: rgba(23, 23, 23, 0.12);
-    color: #171717;
+    background-color: rgba(184, 97, 67, 0.35);
+    color: #f5f5f5;
   }
 
-  /** Collection & installation — fixed scale, no pinch-zoom on image */
   .image-static {
     transform: none !important;
     touch-action: manipulation;
@@ -27,42 +30,29 @@
   }
 
   .heading-display-xl {
-    @apply font-display text-4xl font-light tracking-[-0.03em] md:text-5xl lg:text-6xl;
+    @apply font-display text-4xl font-light tracking-[-0.03em] sm:text-5xl md:text-6xl;
   }
 
   .label-caps {
-    @apply text-[10px] font-semibold uppercase tracking-[0.28em];
+    @apply text-[10px] font-semibold uppercase tracking-[0.32em] text-brand-sand/65;
   }
 
   .body-editorial {
-    @apply text-[0.9375rem] font-normal leading-[1.85] md:text-base md:leading-[1.8];
+    @apply text-[0.9375rem] font-normal leading-[1.85] text-brand-beige/90 md:text-base;
   }
 
   .link-underline {
-    @apply border-b pb-0.5 text-[10px] font-semibold uppercase tracking-[0.2em] transition-all duration-500 ease-luxury;
+    @apply border-b border-brand-terracotta/50 pb-0.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-brand-terracotta transition-all duration-500 ease-luxury hover:border-brand-terracotta hover:text-brand-white;
   }
 
-  .heading-board {
-    @apply heading-editorial;
+  .card-luxury {
+    @apply overflow-hidden rounded-luxury border border-brand-line bg-brand-raised/80 shadow-soft backdrop-blur-sm transition-all duration-500 ease-luxury;
   }
 
-  .label-board {
-    @apply label-caps;
+  .card-luxury:active {
+    @apply scale-[0.99];
   }
 
-  .body-board {
-    @apply body-editorial text-sm md:text-base;
-  }
-
-  .card-editorial {
-    @apply border border-brand-line bg-brand-white shadow-soft transition-colors duration-500 ease-luxury;
-  }
-
-  .card-editorial:hover {
-    @apply border-brand-muted/30;
-  }
-
-  /** Ink ground — for hero & selective contrast blocks */
   .surface-dark {
     @apply bg-brand-charcoal text-brand-sand;
   }
@@ -72,69 +62,21 @@
     @apply text-brand-white;
   }
 
-  .surface-dark .label-caps {
-    @apply text-brand-sand/70;
-  }
-
   .surface-dark .body-editorial {
-    @apply text-brand-sand/95;
+    @apply text-brand-beige/90;
   }
 
-  .surface-dark .link-underline {
-    @apply border-brand-white/40 text-brand-white hover:border-brand-white hover:text-brand-white;
+  .surface-elevated {
+    @apply bg-brand-mist text-brand-sand;
   }
 
-  /** Paper ground — primary minimalist surface */
-  .surface-light {
-    @apply bg-brand-paper text-brand-stone;
+  .surface-elevated .heading-editorial,
+  .surface-elevated .heading-display-xl {
+    @apply text-brand-white;
   }
 
-  .surface-light .heading-editorial,
-  .surface-light .heading-display-xl {
-    @apply text-brand-ink;
-  }
-
-  .surface-light .label-caps {
-    @apply text-brand-muted;
-  }
-
-  .surface-light .body-editorial {
-    @apply text-brand-stone;
-  }
-
-  .surface-light .link-underline {
-    @apply border-brand-ink/35 text-brand-ink hover:border-brand-ink hover:text-brand-ink;
-  }
-
-  /** Alternate light section */
-  .surface-mist {
-    @apply bg-brand-mist text-brand-stone;
-  }
-
-  .surface-mist .heading-editorial,
-  .surface-mist .heading-display-xl {
-    @apply text-brand-ink;
-  }
-
-  .surface-mist .label-caps {
-    @apply text-brand-muted;
-  }
-
-  .surface-mist .body-editorial {
-    @apply text-brand-stone;
-  }
-
-  .surface-mist .link-underline {
-    @apply border-brand-ink/35 text-brand-ink hover:border-brand-ink hover:text-brand-ink;
-  }
-
-  /** Type on photography / gradients */
   .tone-dark {
     @apply text-brand-sand;
-  }
-
-  .tone-dark .label-caps {
-    @apply text-brand-sand/75;
   }
 
   .tone-dark .heading-editorial,
@@ -142,37 +84,21 @@
     @apply text-brand-white;
   }
 
-  .tone-dark .body-editorial {
-    @apply text-brand-sand/95;
-  }
-
-  /** Minimal nav — light header */
   .nav-editorial-link {
-    @apply relative text-brand-muted transition-colors duration-500 ease-luxury hover:text-brand-ink;
+    @apply relative text-brand-sand/70 transition-colors duration-500 ease-luxury hover:text-brand-white;
   }
 
   .nav-editorial-link::after {
     content: "";
-    @apply pointer-events-none absolute -bottom-1 left-0 h-px w-0 bg-brand-ink opacity-60 transition-all duration-500 ease-luxury;
+    @apply pointer-events-none absolute -bottom-1 left-0 h-px w-0 bg-brand-terracotta transition-all duration-500 ease-luxury;
   }
 
   .nav-editorial-link:hover::after,
-  .nav-editorial-link:focus-visible::after {
-    @apply w-full opacity-100;
+  .nav-editorial-link[aria-current="page"]::after {
+    @apply w-full;
   }
 
-  /** Nav on dark hero (mobile overlay contexts) */
-  .nav-editorial-link-on-dark {
-    @apply relative text-brand-sand/85 transition-colors duration-500 ease-luxury hover:text-brand-white;
-  }
-
-  .nav-editorial-link-on-dark::after {
-    content: "";
-    @apply pointer-events-none absolute -bottom-1 left-0 h-px w-0 bg-brand-white opacity-70 transition-all duration-500 ease-luxury;
-  }
-
-  .nav-editorial-link-on-dark:hover::after,
-  .nav-editorial-link-on-dark:focus-visible::after {
-    @apply w-full opacity-100;
+  .nav-editorial-link[aria-current="page"] {
+    @apply text-brand-white;
   }
 }

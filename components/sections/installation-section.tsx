@@ -15,7 +15,7 @@ export function InstallationSection() {
 		<section
 			id="installation"
 			aria-labelledby="installation-heading"
-			className="surface-mist scroll-mt-24 border-b border-brand-line"
+			className="surface-elevated scroll-mt-24 border-b border-brand-line"
 		>
 			<div className="mx-auto max-w-[1600px] px-5 py-20 md:px-10 md:py-28">
 				<MotionReveal className="max-w-2xl">
@@ -40,13 +40,14 @@ export function InstallationSection() {
 							viewport={{ once: true, margin: "-5%" }}
 							transition={{ duration: 0.6, delay: (i % 3) * 0.05, ease }}
 						>
-							<div className="relative aspect-square overflow-hidden border border-brand-line bg-brand-white">
+							<div className="relative aspect-square overflow-hidden rounded-luxury border border-brand-line bg-brand-raised">
 								<StaticImage
 									src={image.src}
 									alt={image.alt}
-									fill
+									width={image.width}
+									height={image.height}
 									quality={IMAGE_QUALITY.section}
-									className="object-contain object-center p-3"
+									className="h-full w-full object-cover"
 									sizes="(max-width: 768px) 50vw, 33vw"
 								/>
 							</div>

@@ -41,7 +41,7 @@ export function HeroSection() {
 					src={HERO_IMAGE.src}
 					alt={HERO_IMAGE.alt}
 					fill
-					className="object-cover object-center"
+					className="object-cover object-center opacity-90"
 					sizes="100vw"
 					priority
 					quality={IMAGE_QUALITY.hero}
@@ -49,28 +49,31 @@ export function HeroSection() {
 			</motion.div>
 			<GrainOverlay opacity="medium" className="z-[1]" />
 			<div
-				className="absolute inset-0 z-[2] bg-gradient-to-t from-brand-charcoal/75 via-brand-charcoal/25 to-transparent"
+				className="absolute inset-0 z-[2] bg-gradient-to-t from-brand-charcoal via-brand-charcoal/40 to-brand-charcoal/20"
 				aria-hidden
 			/>
-			<div className="pointer-events-none absolute inset-x-0 bottom-0 z-[3] h-px bg-gradient-to-r from-transparent via-brand-white/18 to-transparent" />
+			<div className="pointer-events-none absolute inset-x-0 bottom-0 z-[3] h-px bg-gradient-to-r from-transparent via-brand-white/12 to-transparent" />
 
-			<div className="relative z-10 flex min-h-[100dvh] flex-col justify-end px-5 pb-12 pt-28 md:px-10 md:pb-16 lg:px-14">
+			<div className="relative z-10 flex min-h-[100dvh] flex-col justify-end px-5 pb-28 pt-24 md:px-10 md:pb-20 lg:px-14">
 				<motion.div
 					variants={container}
 					initial="hidden"
 					animate="show"
 					className="tone-dark max-w-[1600px]"
 				>
+					<motion.p variants={item} className="label-caps text-brand-terracotta/90">
+						Handcrafted ceramics
+					</motion.p>
 					<motion.h1
 						id="hero-heading"
 						variants={item}
-						className="heading-display-xl mt-6 max-w-4xl text-balance md:mt-8 lg:max-w-5xl"
+						className="heading-display-xl mt-5 max-w-4xl text-balance md:mt-6"
 					>
 						{SITE.name}
 					</motion.h1>
 					<motion.div
 						variants={item}
-						className="mt-10 flex flex-wrap items-center gap-4 md:mt-12 md:gap-6"
+						className="mt-10 flex flex-wrap gap-3 md:mt-12"
 					>
 						<Button href="/collection" variant="ghostOnDark" className="!px-7">
 							View collection

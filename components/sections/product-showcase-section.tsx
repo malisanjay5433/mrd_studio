@@ -14,7 +14,7 @@ export function ProductShowcaseSection() {
 		<section
 			id="collection"
 			aria-labelledby="products-heading"
-			className="surface-light scroll-mt-24 border-b border-brand-line px-5 py-20 md:px-10 md:py-28"
+			className="surface-dark scroll-mt-24 border-b border-brand-line px-5 py-20 md:px-10 md:py-28"
 		>
 			<div className="mx-auto max-w-[1600px]">
 				<MotionReveal className="max-w-2xl">
@@ -38,9 +38,9 @@ export function ProductShowcaseSection() {
 							>
 								<Link
 									href={product.href}
-									className="group block overflow-hidden border border-brand-line bg-brand-white transition-colors duration-500 hover:border-brand-muted/35"
+									className="group block overflow-hidden rounded-luxury border border-brand-line bg-brand-raised transition-colors duration-500 hover:border-brand-sand/25"
 								>
-									<div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-brand-paper">
+									<div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-brand-charcoal">
 										<StaticImage
 											src={product.image.src}
 											alt={product.image.alt}
@@ -52,7 +52,7 @@ export function ProductShowcaseSection() {
 										/>
 									</div>
 									<div className="border-t border-brand-line px-5 py-6">
-										<h3 className="font-display text-lg font-medium tracking-tight text-brand-ink">
+										<h3 className="font-display text-lg font-medium tracking-tight text-brand-white">
 											{product.title}
 										</h3>
 									</div>

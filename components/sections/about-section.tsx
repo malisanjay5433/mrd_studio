@@ -1,13 +1,14 @@
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { SectionLabel } from "@/components/ui/section-label";
 import { GrainOverlay } from "@/components/ui/grain-overlay";
+import { SITE } from "@/lib/constants/landing";
 
 export function AboutSection() {
 	return (
 		<section
 			id="about"
 			aria-labelledby="about-heading"
-			className="surface-light relative scroll-mt-24 border-b border-brand-line"
+			className="surface-elevated relative scroll-mt-24 border-b border-brand-line"
 		>
 			<GrainOverlay opacity="subtle" />
 			<div className="relative mx-auto max-w-[1600px] px-5 py-20 md:px-10 md:py-28">
@@ -17,7 +18,7 @@ export function AboutSection() {
 						id="about-heading"
 						className="heading-editorial mt-6 text-3xl font-light md:mt-8 md:text-4xl lg:text-[2.35rem]"
 					>
-						Rajlaxmi Sonawane
+						{SITE.artist}
 					</h2>
 					<p className="body-editorial mt-10">
 						Rajlaxmi Sonawane is an Indian contemporary artist working across

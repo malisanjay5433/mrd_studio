@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/constants/landing";
 
-const THEME = "#1A1816";
+const THEME = "#121010";
 
 export default function manifest(): MetadataRoute.Manifest {
 	return {

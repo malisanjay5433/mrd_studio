@@ -10,27 +10,27 @@ type CollectionGridProps = {
 export function CollectionGrid({ items }: CollectionGridProps) {
 	return (
 		<ul
-			className="relative mt-14 grid list-none gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10"
+			className="relative mt-10 grid list-none grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6"
 			role="list"
 		>
 			{items.map((item, i) => (
 				<li key={item.slug}>
-					<MotionReveal delay={(i % 3) * 0.05}>
+					<MotionReveal delay={(i % 3) * 0.04}>
 						<article id={item.slug} className="scroll-mt-28">
-							<div className="overflow-hidden border border-brand-line bg-brand-white">
-								<div className="relative aspect-[4/5] bg-brand-paper">
+							<div className="card-luxury">
+								<div className="relative aspect-[4/5] bg-brand-charcoal/60">
 									<StaticImage
 										src={item.image.src}
 										alt={item.image.alt}
 										width={item.image.width}
 										height={item.image.height}
 										quality={IMAGE_QUALITY.section}
-										className="h-full w-full object-contain object-center p-6"
-										sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+										className="h-full w-full object-contain object-center p-4"
+										sizes="(max-width: 640px) 50vw, 33vw"
 									/>
 								</div>
-								<div className="border-t border-brand-line px-5 py-6">
-									<h2 className="font-display text-lg font-medium tracking-tight text-brand-ink">
+								<div className="border-t border-brand-line px-4 py-4">
+									<h2 className="font-display text-sm font-medium tracking-tight text-brand-white md:text-base">
 										{item.title}
 									</h2>
 								</div>

@@ -10,64 +10,65 @@ import { IMAGE_QUALITY, SITE } from "@/lib/constants/landing";
 
 export const metadata: Metadata = {
 	title: "Collection",
-	description: `${SITE.name} — tableware and studio ceramics across 2015–2025.`,
+	description: `${SITE.name} — tableware and studio ceramics.`,
 };
 
 export default function CollectionHubPage() {
 	return (
 		<>
 			<SiteHeader />
-			<main className="min-h-screen bg-brand-paper">
-				<section
-					aria-labelledby="collection-hub-heading"
-					className="surface-light relative scroll-mt-24 border-b border-brand-line px-5 py-20 md:px-10 md:py-28"
-				>
-					<div className="relative mx-auto max-w-[1600px]">
-						<MotionReveal className="max-w-2xl">
-							<SectionLabel>Collection</SectionLabel>
-							<h1
-								id="collection-hub-heading"
-								className="heading-editorial mt-5 text-3xl font-light md:mt-6 md:text-4xl lg:text-[2.65rem]"
-							>
-								Collection
-							</h1>
-						</MotionReveal>
+			<main className="min-h-screen">
+			<section
+				aria-labelledby="collection-hub-heading"
+				className="surface-dark scroll-mt-24 px-5 py-12 md:px-10 md:py-16"
+			>
+				<div className="mx-auto max-w-[1600px]">
+					<MotionReveal>
+						<SectionLabel>Collection</SectionLabel>
+						<h1
+							id="collection-hub-heading"
+							className="heading-editorial mt-4 text-3xl font-light md:text-4xl"
+						>
+							Collection
+						</h1>
+					</MotionReveal>
 
-						<ul className="mt-14 grid list-none gap-10 md:grid-cols-2 md:gap-12">
-							{COLLECTION_ERAS.map((era, i) => (
-								<li key={era.slug}>
-									<MotionReveal delay={i * 0.08}>
-										<Link
-											href={era.href}
-											className="group block border border-brand-line bg-brand-white transition-colors duration-500 hover:border-brand-muted/40"
-										>
-											<div className="relative aspect-[5/4] bg-brand-paper">
+					<ul className="mt-10 grid list-none gap-6 md:grid-cols-2 md:gap-8">
+						{COLLECTION_ERAS.map((era, i) => (
+							<li key={era.slug}>
+								<MotionReveal delay={i * 0.08}>
+									<Link href={era.href} className="group block">
+										<div className="card-luxury">
+											<div className="relative aspect-[5/4] bg-brand-charcoal/50">
 												<StaticImage
 													src={era.cover.src}
 													alt={era.cover.alt}
 													width={era.cover.width}
 													height={era.cover.height}
 													quality={IMAGE_QUALITY.section}
-													className="h-full w-full object-contain object-center p-8"
+													className="h-full w-full object-contain object-center p-6 transition-transform duration-[1.1s] ease-luxury group-hover:scale-[1.02]"
 													sizes="(max-width: 768px) 100vw, 50vw"
 												/>
 											</div>
-											<div className="border-t border-brand-line px-6 py-6 md:px-8 md:py-7">
-												<p className="label-caps">{era.subtitle}</p>
-												<h2 className="heading-editorial mt-3 text-2xl font-light md:text-3xl">
+											<div className="border-t border-brand-line px-5 py-5">
+												<p className="label-caps text-brand-terracotta/80">
+													{era.subtitle}
+												</p>
+												<h2 className="heading-editorial mt-2 text-xl font-light text-brand-white md:text-2xl">
 													{era.title}
 												</h2>
-												<p className="mt-2 text-xs uppercase tracking-[0.2em] text-brand-muted">
+												<p className="mt-2 text-[10px] uppercase tracking-[0.2em] text-brand-clay">
 													{era.count} pieces
 												</p>
 											</div>
-										</Link>
-									</MotionReveal>
-								</li>
-							))}
-						</ul>
-					</div>
-				</section>
+										</div>
+									</Link>
+								</MotionReveal>
+							</li>
+						))}
+					</ul>
+				</div>
+			</section>
 			</main>
 			<SiteFooter />
 		</>

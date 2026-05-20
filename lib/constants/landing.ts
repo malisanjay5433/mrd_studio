@@ -5,9 +5,10 @@ import {
 } from "@/lib/constants/collection";
 
 export const SITE = {
+	artist: "Rajlaxmi Sonawane",
 	name: "Rajlaxmi",
 	description:
-		"Contemporary ceramics and painting by Rajlaxmi Sonawane.",
+		"Handcrafted ceramics and contemporary art by Rajlaxmi Sonawane.",
 } as const;
 
 /** Default aspect for catalogue stills when a piece omits explicit dimensions. */

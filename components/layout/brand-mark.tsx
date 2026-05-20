@@ -25,13 +25,14 @@ const iconSize = {
 };
 
 export function BrandMark({
-	variant = "dark",
+	variant = "light",
 	className = "",
 	size = "md",
 }: Props) {
-	const stroke = variant === "light" ? "#FFFFFF" : "#171717";
+	const stroke = variant === "light" ? "#F5F5F5" : "#121010";
 	const textMain =
 		variant === "light" ? "text-brand-white" : "text-brand-charcoal";
+
 	return (
 		<div className={`flex flex-col items-start ${textScale[size]} ${className}`}>
 			<svg
@@ -39,7 +40,7 @@ export function BrandMark({
 				className={`shrink-0 ${iconSize[size]}`}
 				aria-hidden
 			>
-				<title>{SITE.name} mark</title>
+				<title>{`${SITE.name} mark`}</title>
 				<path
 					d="M18 36c0-8 6.5-14 14-14s14 6 14 14v4c0 6-5.5 11-12 11h-4c-6.5 0-12-5-12-11v-4z"
 					fill="none"
@@ -72,13 +73,11 @@ export function BrandMark({
 					opacity="0.65"
 				/>
 			</svg>
-			<div className="flex flex-col leading-none">
-				<span
-					className={`font-display font-medium ${wordClass[size]} ${textMain} max-w-[12rem] text-balance sm:max-w-none`}
-				>
-					{SITE.name}
-				</span>
-			</div>
+			<span
+				className={`font-display font-medium ${wordClass[size]} ${textMain} max-w-[12rem] text-balance sm:max-w-none`}
+			>
+				{SITE.name}
+			</span>
 		</div>
 	);
 }
