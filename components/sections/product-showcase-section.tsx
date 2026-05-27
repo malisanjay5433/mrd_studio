@@ -1,13 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
-import { IMAGE_QUALITY, PRODUCTS } from "@/lib/constants/landing";
+import { COLLECTION_FEATURE, IMAGE_QUALITY } from "@/lib/constants/landing";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { SectionLabel } from "@/components/ui/section-label";
 import { StaticImage } from "@/components/ui/static-image";
-
-const ease = [0.22, 1, 0.36, 1] as const;
 
 export function ProductShowcaseSection() {
 	return (
@@ -23,44 +20,29 @@ export function ProductShowcaseSection() {
 						id="products-heading"
 						className="heading-editorial mt-5 text-3xl font-light md:mt-6 md:text-4xl lg:text-[2.65rem]"
 					>
-						Tableware · 2015–2020
+						Collection
 					</h2>
+					<p className="body-editorial mt-6">{COLLECTION_FEATURE.description}</p>
 				</MotionReveal>
 
-				<ul className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-					{PRODUCTS.map((product, i) => (
-						<li key={product.title}>
-							<motion.div
-								initial={{ opacity: 0, y: 24 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								viewport={{ once: true, margin: "-10%" }}
-								transition={{ duration: 0.7, delay: i * 0.06, ease }}
-							>
-								<Link
-									href={product.href}
-									className="group block overflow-hidden rounded-luxury border border-brand-line bg-brand-raised transition-colors duration-500 hover:border-brand-sand/25"
-								>
-									<div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-brand-charcoal">
-										<StaticImage
-											src={product.image.src}
-											alt={product.image.alt}
-											width={product.image.width}
-											height={product.image.height}
-											quality={IMAGE_QUALITY.section}
-											className="h-full w-full object-contain object-center p-6"
-											sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-										/>
-									</div>
-									<div className="border-t border-brand-line px-5 py-6">
-										<h3 className="font-display text-lg font-medium tracking-tight text-brand-white">
-											{product.title}
-										</h3>
-									</div>
-								</Link>
-							</motion.div>
-						</li>
-					))}
-				</ul>
+				<MotionReveal className="mt-14 max-w-3xl" delay={0.08}>
+					<Link
+						href={COLLECTION_FEATURE.href}
+						className="group block overflow-hidden rounded-luxury border border-brand-line bg-brand-raised transition-colors duration-500 hover:border-brand-sand/25"
+					>
+						<div className="relative aspect-[4/3] overflow-hidden bg-brand-charcoal">
+							<StaticImage
+								src={COLLECTION_FEATURE.image.src}
+								alt={COLLECTION_FEATURE.image.alt}
+								width={COLLECTION_FEATURE.image.width}
+								height={COLLECTION_FEATURE.image.height}
+								quality={IMAGE_QUALITY.section}
+								className="h-full w-full object-contain object-center p-8 transition-transform duration-[1.1s] ease-luxury group-hover:scale-[1.02]"
+								sizes="(max-width: 768px) 100vw, 768px"
+							/>
+						</div>
+					</Link>
+				</MotionReveal>
 			</div>
 		</section>
 	);

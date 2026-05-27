@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { FEATURED_INSTALLATIONS } from "@/lib/constants/collection";
 import { IMAGE_QUALITY } from "@/lib/constants/landing";
@@ -8,9 +7,9 @@ import { MotionReveal } from "@/components/ui/motion-reveal";
 import { SectionLabel } from "@/components/ui/section-label";
 import { StaticImage } from "@/components/ui/static-image";
 
-const ease = [0.22, 1, 0.36, 1] as const;
-
 export function InstallationSection() {
+	const featuredInstallation = FEATURED_INSTALLATIONS[0];
+
 	return (
 		<section
 			id="installation"
@@ -26,34 +25,25 @@ export function InstallationSection() {
 					>
 						Installations
 					</h2>
+					<p className="body-editorial mt-6">Sample description</p>
 					<Link href="/installations" className="link-underline mt-10 inline-block">
 						View full installation
 					</Link>
 				</MotionReveal>
 
-				<div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
-					{FEATURED_INSTALLATIONS.map((image, i) => (
-						<motion.div
-							key={image.src}
-							initial={{ opacity: 0, y: 12 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true, margin: "-5%" }}
-							transition={{ duration: 0.6, delay: (i % 3) * 0.05, ease }}
-						>
-							<div className="relative aspect-square overflow-hidden rounded-luxury border border-brand-line bg-brand-raised">
-								<StaticImage
-									src={image.src}
-									alt={image.alt}
-									width={image.width}
-									height={image.height}
-									quality={IMAGE_QUALITY.section}
-									className="h-full w-full object-cover"
-									sizes="(max-width: 768px) 50vw, 33vw"
-								/>
-							</div>
-						</motion.div>
-					))}
-				</div>
+				<MotionReveal className="mt-14 max-w-3xl" delay={0.08}>
+					<div className="relative aspect-[4/3] overflow-hidden rounded-luxury border border-brand-line bg-brand-raised">
+						<StaticImage
+							src={featuredInstallation.src}
+							alt={featuredInstallation.alt}
+							width={featuredInstallation.width}
+							height={featuredInstallation.height}
+							quality={IMAGE_QUALITY.section}
+							className="h-full w-full object-cover"
+							sizes="(max-width: 768px) 100vw, 768px"
+						/>
+					</div>
+				</MotionReveal>
 			</div>
 		</section>
 	);

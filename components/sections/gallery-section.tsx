@@ -1,14 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { GALLERY, IMAGE_QUALITY } from "@/lib/constants/landing";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { SectionLabel } from "@/components/ui/section-label";
 
-const ease = [0.22, 1, 0.36, 1] as const;
-
 export function GallerySection() {
+	const featuredItem = GALLERY[0];
+
 	return (
 		<section
 			id="gallery"
@@ -26,36 +25,21 @@ export function GallerySection() {
 					</h2>
 				</MotionReveal>
 
-				<div
-					className="mt-14 columns-1 gap-5 sm:columns-2 lg:columns-3 lg:gap-6"
-					role="list"
-				>
-					{GALLERY.map((item, i) => (
-						<motion.div
-							key={`${item.src}-${i}`}
-							role="listitem"
-							className="mb-5 break-inside-avoid lg:mb-6"
-							initial={{ opacity: 0, y: 20 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true, margin: "-5%" }}
-							transition={{ duration: 0.65, delay: (i % 3) * 0.05, ease }}
-						>
-							<div className="overflow-hidden rounded-luxury border border-brand-line bg-brand-raised">
-								<div className="relative w-full">
-									<Image
-										src={item.src}
-										alt={item.alt}
-										width={item.width}
-										height={item.height}
-										quality={IMAGE_QUALITY.gallery}
-										className="h-auto w-full object-cover"
-										sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-									/>
-								</div>
-							</div>
-						</motion.div>
-					))}
-				</div>
+				<MotionReveal className="mt-14 max-w-3xl" delay={0.08}>
+					<div className="overflow-hidden rounded-luxury border border-brand-line bg-brand-raised">
+						<div className="relative w-full">
+							<Image
+								src={featuredItem.src}
+								alt={featuredItem.alt}
+								width={featuredItem.width}
+								height={featuredItem.height}
+								quality={IMAGE_QUALITY.gallery}
+								className="h-auto w-full object-cover"
+								sizes="(max-width: 640px) 100vw, (max-width: 1024px) 75vw, 50vw"
+							/>
+						</div>
+					</div>
+				</MotionReveal>
 			</div>
 		</section>
 	);

@@ -1,8 +1,4 @@
-import {
-	COLLECTION_2015_2020,
-	COLLECTION_2021_2025,
-	type CollectionPiece,
-} from "@/lib/constants/collection";
+import { COLLECTION_2021_2025, type CollectionPiece } from "@/lib/constants/collection";
 
 export const SITE = {
 	artist: "Raajlakshmi",
@@ -47,37 +43,21 @@ export const FOOTER_NAV: NavItem[] = [
 	{ label: "Contact", href: "/contact" },
 ];
 
-export type ProductItem = {
-	title: string;
-	description: string;
-	href: string;
-	image: { src: string; alt: string; width: number; height: number };
-};
-
 /** @deprecated Use COLLECTION_2021_2025 — kept for legacy imports. */
 export type { CollectionPiece };
 export const COLLECTION_ITEMS: CollectionPiece[] = COLLECTION_2021_2025;
 
-const FEATURED_TABLEWARE_SLUGS = [
-	"serving-set",
-	"irish-coffee-set",
-	"red-set",
-	"casserole",
-] as const;
-
-/** Homepage featured — tableware 2015–2020. */
-export const PRODUCTS: ProductItem[] = FEATURED_TABLEWARE_SLUGS.map((slug) => {
-	const item = COLLECTION_2015_2020.find((c) => c.slug === slug);
-	if (!item) {
-		throw new Error(`COLLECTION_2015_2020 missing slug: ${slug}`);
-	}
-	return {
-		title: item.title,
-		description: item.description,
-		href: `/collection/2015-2020#${slug}`,
-		image: item.image,
-	};
-});
+/** Homepage collection preview. */
+export const COLLECTION_FEATURE = {
+	description: "Sample description",
+	href: "/collection",
+	image: {
+		src: "/tableware/tableware-01.png",
+		alt: "Tableware editorial still — ceramics on linen",
+		width: 1448,
+		height: 1086,
+	},
+} as const;
 
 export type GalleryItem = {
 	src: string;
@@ -134,8 +114,8 @@ export type SocialLink = {
 export const SOCIAL_LINKS: SocialLink[] = [
 	{
 		label: "Email",
-		href: "mailto:hello@example.com",
-		handle: "hello@example.com",
+		href: "mailto:connect@raajlakshmi.com",
+		handle: "connect@raajlakshmi.com",
 	},
 ];
 

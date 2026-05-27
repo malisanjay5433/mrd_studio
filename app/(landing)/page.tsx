@@ -3,7 +3,6 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { AboutSection } from "@/components/sections/about-section";
 import { InstallationSection } from "@/components/sections/installation-section";
-import { CtaSection } from "@/components/sections/cta-section";
 import { GallerySection } from "@/components/sections/gallery-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { ProductShowcaseSection } from "@/components/sections/product-showcase-section";
@@ -58,7 +57,6 @@ export default function LandingPage() {
 				<ProductShowcaseSection />
 				<InstallationSection />
 				<GallerySection />
-				<CtaSection />
 			</main>
 			<SiteFooter />
 		</>

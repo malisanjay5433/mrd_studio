@@ -70,7 +70,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 						>
 							<AtSign className={`h-5 w-5 ${navClass}`} strokeWidth={1.25} />
 						</Link>
-						<Link href="mailto:hello@example.com" aria-label="Email studio">
+						<Link href="mailto:connect@raajlakshmi.com" aria-label="Email studio">
 							<Mail className={`h-5 w-5 ${navClass}`} strokeWidth={1.25} />
 						</Link>
 					</div>
