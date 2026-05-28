@@ -41,7 +41,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 	}, []);
 
 	const navClass =
-		"text-black hover:text-black transition-colors";
+		"text-black hover:text-brand-terracotta transition-colors";
 
 	return (
 		<header ref={ref} className="relative isolate bg-brand-sand">

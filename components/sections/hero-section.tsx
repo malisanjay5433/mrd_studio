@@ -41,7 +41,7 @@ export function HeroSection() {
 				<div className="mx-auto">
 					<a
 						href="#about"
-						className="flex flex-col items-center gap-3 text-black transition hover:text-black"
+						className="flex flex-col items-center gap-3 text-black transition hover:text-brand-terracotta"
 						aria-label="Scroll to about section"
 					>
 						<ScrollIndicator />

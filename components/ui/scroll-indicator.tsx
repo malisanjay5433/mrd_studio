@@ -11,18 +11,18 @@ export function ScrollIndicator() {
 			transition={{ delay: 1.2, duration: 0.8 }}
 			aria-hidden
 		>
-			<span className="text-[9px] font-semibold uppercase tracking-[0.28em] text-black">
+			<span className="text-[9px] font-semibold uppercase tracking-[0.28em] text-brand-terracotta">
 				Scroll
 			</span>
 			<motion.div
-				className="flex h-12 w-px overflow-hidden bg-gradient-to-b from-black/45 to-transparent"
+				className="flex h-12 w-px overflow-hidden bg-gradient-to-b from-brand-terracotta/60 to-transparent"
 				initial={{ scaleY: 0 }}
 				animate={{ scaleY: 1 }}
 				transition={{ delay: 1.35, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
 				style={{ originY: 0 }}
 			/>
 			<motion.div
-				className="h-1.5 w-1.5 rounded-full bg-black/65"
+				className="h-1.5 w-1.5 rounded-full bg-brand-terracotta/80"
 				animate={{ y: [0, 10, 0], opacity: [0.5, 1, 0.5] }}
 				transition={{
 					duration: 2.2,

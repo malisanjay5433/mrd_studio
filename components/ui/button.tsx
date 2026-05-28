@@ -6,11 +6,11 @@ const base =
 
 const variants = {
 	primary:
-		"border border-brand-terracotta bg-brand-terracotta text-black shadow-terracotta hover:border-brand-beige hover:bg-brand-beige hover:text-black",
+		"border border-brand-terracotta bg-brand-terracotta text-brand-white shadow-terracotta hover:border-black hover:bg-black hover:text-brand-white",
 	secondary:
-		"border border-brand-line bg-brand-beige/80 text-black hover:border-black/30 hover:bg-brand-beige",
+		"border border-brand-line bg-brand-beige/80 text-black hover:border-brand-terracotta/40 hover:bg-brand-beige",
 	ghostOnDark:
-		"border border-black/20 bg-black/5 text-black hover:border-black/60 hover:bg-black/10 hover:text-black",
+		"border border-brand-terracotta/30 bg-transparent text-black hover:border-brand-terracotta hover:bg-brand-terracotta/10 hover:text-brand-terracotta",
 } as const;
 
 type Variant = keyof typeof variants;

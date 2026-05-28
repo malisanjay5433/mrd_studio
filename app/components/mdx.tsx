@@ -65,7 +65,7 @@ const components = {
 	a: ({ className, ...props }) => (
 		<Link
 			className={clsx(
-				"font-medium text-black underline decoration-brand-rule underline-offset-4 hover:text-black",
+				"font-medium text-brand-terracotta underline decoration-brand-terracotta/40 underline-offset-4 hover:text-black",
 				className,
 			)}
 			{...props}

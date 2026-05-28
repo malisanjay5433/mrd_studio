@@ -34,7 +34,7 @@
   }
 
   .label-caps {
-    @apply text-[10px] font-semibold uppercase tracking-[0.32em] text-black;
+    @apply text-[10px] font-semibold uppercase tracking-[0.32em] text-brand-terracotta;
   }
 
   .body-editorial {
@@ -42,7 +42,7 @@
   }
 
   .link-underline {
-    @apply border-b border-black/40 pb-0.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-black transition-all duration-500 ease-luxury hover:border-black hover:text-black;
+    @apply border-b border-brand-terracotta/50 pb-0.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-brand-terracotta transition-all duration-500 ease-luxury hover:border-brand-terracotta hover:text-black;
   }
 
   .card-luxury {
@@ -59,8 +59,7 @@
 
   .surface-dark .heading-editorial,
   .surface-dark .heading-display-xl,
-  .surface-dark .body-editorial,
-  .surface-dark .label-caps {
+  .surface-dark .body-editorial {
     @apply text-black;
   }
 
@@ -70,8 +69,7 @@
 
   .surface-elevated .heading-editorial,
   .surface-elevated .heading-display-xl,
-  .surface-elevated .body-editorial,
-  .surface-elevated .label-caps {
+  .surface-elevated .body-editorial {
     @apply text-black;
   }
 
@@ -85,12 +83,12 @@
   }
 
   .nav-editorial-link {
-    @apply relative text-black transition-colors duration-500 ease-luxury hover:text-black;
+    @apply relative text-black transition-colors duration-500 ease-luxury hover:text-brand-terracotta;
   }
 
   .nav-editorial-link::after {
     content: "";
-    @apply pointer-events-none absolute -bottom-1 left-0 h-px w-0 bg-black transition-all duration-500 ease-luxury;
+    @apply pointer-events-none absolute -bottom-1 left-0 h-px w-0 bg-brand-terracotta transition-all duration-500 ease-luxury;
   }
 
   .nav-editorial-link:hover::after,
@@ -99,6 +97,6 @@
   }
 
   .nav-editorial-link[aria-current="page"] {
-    @apply text-black;
+    @apply text-brand-terracotta;
   }
 }

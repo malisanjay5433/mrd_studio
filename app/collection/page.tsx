@@ -51,7 +51,7 @@ export default function CollectionHubPage() {
 												/>
 											</div>
 											<div className="border-t border-brand-line px-5 py-5">
-												<p className="label-caps text-black">
+												<p className="label-caps">
 													{era.subtitle}
 												</p>
 												<h2 className="heading-editorial mt-2 text-xl font-light text-black md:text-2xl">
