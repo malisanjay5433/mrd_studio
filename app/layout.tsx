@@ -61,8 +61,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-	themeColor: "#121010",
-	colorScheme: "dark",
+	themeColor: "#C8C1B5",
+	colorScheme: "light",
 	width: "device-width",
 	initialScale: 1,
 };
@@ -93,7 +93,7 @@ export default function RootLayout({
 				<Analytics />
 			</head>
 			<body
-				className={`bg-brand-charcoal font-sans text-brand-sand antialiased ${
+				className={`bg-brand-sand font-sans text-black antialiased ${
 					process.env.NODE_ENV === "development" ? "debug-screens" : ""
 				}`}
 			>

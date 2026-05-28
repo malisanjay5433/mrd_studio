@@ -29,9 +29,8 @@ export function BrandMark({
 	className = "",
 	size = "md",
 }: Props) {
-	const stroke = variant === "light" ? "#F5F5F5" : "#121010";
-	const textMain =
-		variant === "light" ? "text-brand-white" : "text-brand-charcoal";
+	const stroke = "#000000";
+	const textMain = "text-black";
 
 	return (
 		<div className={`flex flex-col items-start ${textScale[size]} ${className}`}>

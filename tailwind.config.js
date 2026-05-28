@@ -18,7 +18,7 @@ module.exports = {
 					white: "#F5F5F5",
 					paper: "#1A1816",
 					mist: "#222020",
-					line: "rgba(245, 245, 245, 0.1)",
+					line: "rgba(18, 16, 16, 0.12)",
 					muted: "#8A7B6D",
 					ink: "#F5F5F5",
 					stone: "#C8C1B5",
@@ -28,7 +28,7 @@ module.exports = {
 					terracotta: "#B86143",
 					charcoal: "#121010",
 					raised: "#1E1C1A",
-					rule: "rgba(245, 245, 245, 0.08)",
+					rule: "rgba(18, 16, 16, 0.1)",
 				},
 				heath: {
 					ink: "#171717",

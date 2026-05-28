@@ -20,7 +20,7 @@ const components = {
 	h2: ({ className, ...props }) => (
 		<h2
 			className={clsx(
-				"mt-10 scroll-m-20 border-b border-b-brand-rule pb-1 text-3xl font-medium tracking-tight text-brand-charcoal first:mt-0",
+				"mt-10 scroll-m-20 border-b border-b-brand-rule pb-1 text-3xl font-medium tracking-tight text-black first:mt-0",
 				className,
 			)}
 			{...props}
@@ -65,7 +65,7 @@ const components = {
 	a: ({ className, ...props }) => (
 		<Link
 			className={clsx(
-				"font-medium text-brand-charcoal underline decoration-brand-rule underline-offset-4 hover:text-brand-terracotta",
+				"font-medium text-black underline decoration-brand-rule underline-offset-4 hover:text-black",
 				className,
 			)}
 			{...props}
@@ -89,7 +89,7 @@ const components = {
 	blockquote: ({ className, ...props }) => (
 		<blockquote
 			className={clsx(
-				"mt-6 border-l-2 border-brand-rule pl-6 italic text-brand-charcoal [&>*]:text-brand-clay",
+				"mt-6 border-l-2 border-brand-rule pl-6 italic text-black [&>*]:text-black",
 				className,
 			)}
 			{...props}
@@ -128,7 +128,7 @@ const components = {
 	th: ({ className, ...props }) => (
 		<th
 			className={clsx(
-				"border border-brand-rule px-4 py-2 text-left font-bold text-brand-charcoal [&[align=center]]:text-center [&[align=right]]:text-right",
+				"border border-brand-rule px-4 py-2 text-left font-bold text-black [&[align=center]]:text-center [&[align=right]]:text-right",
 				className,
 			)}
 			{...props}
@@ -137,7 +137,7 @@ const components = {
 	td: ({ className, ...props }) => (
 		<td
 			className={clsx(
-				"border border-brand-rule px-4 py-2 text-left text-brand-clay [&[align=center]]:text-center [&[align=right]]:text-right",
+				"border border-brand-rule px-4 py-2 text-left text-black [&[align=center]]:text-center [&[align=right]]:text-right",
 				className,
 			)}
 			{...props}
@@ -146,7 +146,7 @@ const components = {
 	pre: ({ className, ...props }) => (
 		<pre
 			className={clsx(
-				"mt-6 mb-4 overflow-x-auto rounded-lg bg-brand-charcoal py-4 text-brand-sand",
+				"mt-6 mb-4 overflow-x-auto rounded-lg bg-brand-beige py-4 text-black",
 				className,
 			)}
 			{...props}
@@ -155,7 +155,7 @@ const components = {
 	code: ({ className, ...props }) => (
 		<code
 			className={clsx(
-				"relative rounded border border-brand-rule bg-brand-raised py-[0.2rem] px-[0.3rem] font-mono text-sm text-brand-clay",
+				"relative rounded border border-brand-rule bg-brand-raised py-[0.2rem] px-[0.3rem] font-mono text-sm text-black",
 				className,
 			)}
 			{...props}

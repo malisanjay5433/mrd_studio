@@ -39,7 +39,7 @@ export default function CollectionHubPage() {
 								<MotionReveal delay={i * 0.08}>
 									<Link href={era.href} className="group block">
 										<div className="card-luxury">
-											<div className="relative aspect-[5/4] bg-brand-charcoal/50">
+											<div className="relative aspect-[5/4] bg-brand-beige/80">
 												<StaticImage
 													src={era.cover.src}
 													alt={era.cover.alt}
@@ -51,13 +51,13 @@ export default function CollectionHubPage() {
 												/>
 											</div>
 											<div className="border-t border-brand-line px-5 py-5">
-												<p className="label-caps text-brand-terracotta/80">
+												<p className="label-caps text-black">
 													{era.subtitle}
 												</p>
-												<h2 className="heading-editorial mt-2 text-xl font-light text-brand-white md:text-2xl">
+												<h2 className="heading-editorial mt-2 text-xl font-light text-black md:text-2xl">
 													{era.title}
 												</h2>
-												<p className="mt-2 text-[10px] uppercase tracking-[0.2em] text-brand-clay">
+												<p className="mt-2 text-[10px] uppercase tracking-[0.2em] text-black">
 													{era.count} pieces
 												</p>
 											</div>

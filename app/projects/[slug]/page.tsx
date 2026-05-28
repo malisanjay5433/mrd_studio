@@ -23,11 +23,11 @@ export default async function PostPage({ params }: Props) {
 	const views = await getProjectViewCount(slug);
 
 	return (
-		<div className="min-h-screen bg-brand-charcoal">
+		<div className="min-h-screen bg-brand-sand">
 			<Header project={project} views={views} />
 			<ReportView slug={project.slug} />
 
-			<article className="surface-light prose prose-neutral prose-quoteless mx-auto max-w-3xl px-4 py-12 prose-headings:font-display prose-headings:font-medium prose-headings:text-brand-charcoal prose-p:text-brand-clay prose-a:border-b prose-a:border-brand-terracotta prose-a:text-brand-terracotta prose-a:no-underline prose-strong:text-brand-charcoal prose-code:rounded prose-code:bg-brand-raised prose-code:px-1 prose-code:text-brand-terracotta hover:prose-a:text-brand-charcoal">
+			<article className="surface-light prose prose-neutral prose-quoteless mx-auto max-w-3xl px-4 py-12 prose-headings:font-display prose-headings:font-medium prose-headings:text-black prose-p:text-black prose-a:border-b prose-a:border-black prose-a:text-black prose-a:no-underline prose-strong:text-black prose-code:rounded prose-code:bg-brand-beige prose-code:px-1 prose-code:text-black hover:prose-a:text-black">
 				<Mdx code={project.body.code} />
 			</article>
 		</div>

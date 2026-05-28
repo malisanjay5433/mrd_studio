@@ -8,12 +8,12 @@
   }
 
   body {
-    @apply bg-brand-charcoal text-brand-sand antialiased;
+    @apply bg-brand-sand text-black antialiased;
   }
 
   ::selection {
     background-color: rgba(184, 97, 67, 0.35);
-    color: #f5f5f5;
+    color: #000000;
   }
 
   .image-static {
@@ -26,27 +26,27 @@
 
 @layer components {
   .heading-editorial {
-    @apply font-display font-medium tracking-[-0.02em];
+    @apply font-display font-medium tracking-[-0.02em] text-black;
   }
 
   .heading-display-xl {
-    @apply font-display text-4xl font-light tracking-[-0.03em] sm:text-5xl md:text-6xl;
+    @apply font-display text-4xl font-light tracking-[-0.03em] text-black sm:text-5xl md:text-6xl;
   }
 
   .label-caps {
-    @apply text-[10px] font-semibold uppercase tracking-[0.32em] text-brand-sand/65;
+    @apply text-[10px] font-semibold uppercase tracking-[0.32em] text-black;
   }
 
   .body-editorial {
-    @apply text-[0.9375rem] font-normal leading-[1.85] text-brand-beige/90 md:text-base;
+    @apply text-[0.9375rem] font-normal leading-[1.85] text-black md:text-base;
   }
 
   .link-underline {
-    @apply border-b border-brand-terracotta/50 pb-0.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-brand-terracotta transition-all duration-500 ease-luxury hover:border-brand-terracotta hover:text-brand-white;
+    @apply border-b border-black/40 pb-0.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-black transition-all duration-500 ease-luxury hover:border-black hover:text-black;
   }
 
   .card-luxury {
-    @apply overflow-hidden rounded-luxury border border-brand-line bg-brand-raised/80 shadow-soft backdrop-blur-sm transition-all duration-500 ease-luxury;
+    @apply overflow-hidden rounded-luxury border border-brand-line bg-brand-beige/90 shadow-soft backdrop-blur-sm transition-all duration-500 ease-luxury;
   }
 
   .card-luxury:active {
@@ -54,43 +54,43 @@
   }
 
   .surface-dark {
-    @apply bg-brand-charcoal text-brand-sand;
+    @apply bg-brand-sand text-black;
   }
 
   .surface-dark .heading-editorial,
-  .surface-dark .heading-display-xl {
-    @apply text-brand-white;
-  }
-
-  .surface-dark .body-editorial {
-    @apply text-brand-beige/90;
+  .surface-dark .heading-display-xl,
+  .surface-dark .body-editorial,
+  .surface-dark .label-caps {
+    @apply text-black;
   }
 
   .surface-elevated {
-    @apply bg-brand-mist text-brand-sand;
+    @apply bg-brand-beige text-black;
   }
 
   .surface-elevated .heading-editorial,
-  .surface-elevated .heading-display-xl {
-    @apply text-brand-white;
+  .surface-elevated .heading-display-xl,
+  .surface-elevated .body-editorial,
+  .surface-elevated .label-caps {
+    @apply text-black;
   }
 
   .tone-dark {
-    @apply text-brand-sand;
+    @apply text-black;
   }
 
   .tone-dark .heading-editorial,
   .tone-dark .heading-display-xl {
-    @apply text-brand-white;
+    @apply text-black;
   }
 
   .nav-editorial-link {
-    @apply relative text-brand-sand/70 transition-colors duration-500 ease-luxury hover:text-brand-white;
+    @apply relative text-black transition-colors duration-500 ease-luxury hover:text-black;
   }
 
   .nav-editorial-link::after {
     content: "";
-    @apply pointer-events-none absolute -bottom-1 left-0 h-px w-0 bg-brand-terracotta transition-all duration-500 ease-luxury;
+    @apply pointer-events-none absolute -bottom-1 left-0 h-px w-0 bg-black transition-all duration-500 ease-luxury;
   }
 
   .nav-editorial-link:hover::after,
@@ -99,6 +99,6 @@
   }
 
   .nav-editorial-link[aria-current="page"] {
-    @apply text-brand-white;
+    @apply text-black;
   }
 }

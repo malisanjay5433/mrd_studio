@@ -43,15 +43,15 @@ export default function ContactPage() {
 									>
 										<div className="card-luxury flex w-full flex-col items-center gap-4 px-4 py-10">
 											<span
-												className="flex h-12 w-12 items-center justify-center rounded-full border border-brand-line bg-brand-charcoal/80 text-brand-terracotta transition duration-500 group-hover:border-brand-terracotta group-hover:bg-brand-terracotta/15"
+												className="flex h-12 w-12 items-center justify-center rounded-full border border-brand-line bg-brand-sand/80 text-black transition duration-500 group-hover:border-black group-hover:bg-black/10"
 												aria-hidden
 											>
 												<Mail size={20} strokeWidth={1.25} />
 											</span>
-											<span className="font-display text-lg font-medium tracking-tight text-brand-white transition group-hover:text-brand-terracotta">
+											<span className="font-display text-lg font-medium tracking-tight text-black transition group-hover:text-black">
 												{email.handle}
 											</span>
-											<span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-brand-clay">
+											<span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-black">
 												{email.label}
 											</span>
 										</div>

@@ -9,7 +9,7 @@ export default function NotFound() {
 			<SiteHeader />
 			<main className="min-h-screen">
 				<section className="surface-dark flex min-h-[60vh] flex-col items-center justify-center px-5 py-20 text-center">
-					<p className="label-caps text-brand-terracotta/90">404</p>
+					<p className="label-caps text-black">404</p>
 					<h1 className="heading-editorial mt-6 text-3xl font-light">
 						Page not found
 					</h1>
@@ -20,7 +20,7 @@ export default function NotFound() {
 					</div>
 					<Link
 						href="/contact"
-						className="mt-6 text-[10px] uppercase tracking-[0.22em] text-brand-clay transition hover:text-brand-terracotta"
+						className="mt-6 text-[10px] uppercase tracking-[0.22em] text-black transition hover:text-black"
 					>
 						Contact
 					</Link>

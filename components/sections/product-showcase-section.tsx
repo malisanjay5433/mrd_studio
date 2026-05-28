@@ -30,7 +30,7 @@ export function ProductShowcaseSection() {
 						href={COLLECTION_FEATURE.href}
 						className="group block overflow-hidden rounded-luxury border border-brand-line bg-brand-raised transition-colors duration-500 hover:border-brand-sand/25"
 					>
-						<div className="relative aspect-[4/3] overflow-hidden bg-brand-charcoal">
+						<div className="relative aspect-[4/3] overflow-hidden bg-brand-beige/80">
 							<StaticImage
 								src={COLLECTION_FEATURE.image.src}
 								alt={COLLECTION_FEATURE.image.alt}

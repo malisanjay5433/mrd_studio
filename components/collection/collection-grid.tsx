@@ -18,7 +18,7 @@ export function CollectionGrid({ items }: CollectionGridProps) {
 					<MotionReveal delay={(i % 3) * 0.04}>
 						<article id={item.slug} className="scroll-mt-28">
 							<div className="card-luxury">
-								<div className="relative aspect-[4/5] bg-brand-charcoal/60">
+								<div className="relative aspect-[4/5] bg-brand-beige/80">
 									<StaticImage
 										src={item.image.src}
 										alt={item.image.alt}
@@ -30,7 +30,7 @@ export function CollectionGrid({ items }: CollectionGridProps) {
 									/>
 								</div>
 								<div className="border-t border-brand-line px-4 py-4">
-									<h2 className="font-display text-sm font-medium tracking-tight text-brand-white md:text-base">
+									<h2 className="font-display text-sm font-medium tracking-tight text-black md:text-base">
 										{item.title}
 									</h2>
 								</div>

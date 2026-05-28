@@ -41,15 +41,15 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 	}, []);
 
 	const navClass =
-		"text-brand-sand/85 hover:text-brand-white transition-colors";
+		"text-black hover:text-black transition-colors";
 
 	return (
-		<header ref={ref} className="relative isolate bg-brand-charcoal">
+		<header ref={ref} className="relative isolate bg-brand-sand">
 			<div
 				className={`fixed inset-x-0 top-0 z-50 border-b backdrop-blur-md duration-200 ${
 					isIntersecting
-						? "border-transparent bg-brand-charcoal/0"
-						: "border-brand-white/10 bg-brand-charcoal/92"
+						? "border-transparent bg-brand-sand/0"
+						: "border-brand-line bg-brand-sand/92"
 				}`}
 			>
 				<div className="container mx-auto flex flex-row-reverse items-center justify-between p-6">
@@ -84,12 +84,12 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 					</Link>
 				</div>
 			</div>
-			<div className="tone-dark container relative mx-auto border-b border-brand-white/10 px-6 pb-20 pt-28 sm:pb-24 sm:pt-32">
+			<div className="container relative mx-auto border-b border-brand-line px-6 pb-20 pt-28 sm:pb-24 sm:pt-32">
 				<div className="mx-auto max-w-3xl text-center lg:text-left">
-					<h1 className="font-display text-4xl font-medium tracking-tight text-brand-white sm:text-5xl lg:text-6xl">
+					<h1 className="font-display text-4xl font-medium tracking-tight text-black sm:text-5xl lg:text-6xl">
 						{project.title}
 					</h1>
-					<p className="body-editorial mt-8 text-brand-sand/90">
+					<p className="body-editorial mt-8 text-black">
 						{project.description}
 					</p>
 
