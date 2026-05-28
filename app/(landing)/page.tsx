@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { AboutSection } from "@/components/sections/about-section";
-import { InstallationSection } from "@/components/sections/installation-section";
-import { GallerySection } from "@/components/sections/gallery-section";
 import { HeroSection } from "@/components/sections/hero-section";
-import { ProductShowcaseSection } from "@/components/sections/product-showcase-section";
 import { SITE } from "@/lib/constants/landing";
 
 function siteUrl(): string {
@@ -54,9 +51,6 @@ export default function LandingPage() {
 			<main className="min-h-screen">
 				<HeroSection />
 				<AboutSection />
-				<ProductShowcaseSection />
-				<InstallationSection />
-				<GallerySection />
 			</main>
 			<SiteFooter />
 		</>

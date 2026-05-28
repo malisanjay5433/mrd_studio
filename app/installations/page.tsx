@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { Button } from "@/components/ui/button";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { SectionLabel } from "@/components/ui/section-label";
 import { StaticImage } from "@/components/ui/static-image";
@@ -57,12 +56,6 @@ export default function InstallationsPage() {
 							</div>
 						))}
 					</div>
-
-					<MotionReveal className="mt-12 text-center">
-						<Button href="/contact" variant="primary">
-							Inquire
-						</Button>
-					</MotionReveal>
 				</div>
 			</section>
 			</main>
