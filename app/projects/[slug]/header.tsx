@@ -44,12 +44,12 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 		"text-black hover:text-brand-terracotta transition-colors";
 
 	return (
-		<header ref={ref} className="relative isolate bg-brand-sand">
+		<header ref={ref} className="relative isolate bg-brand-beige">
 			<div
 				className={`fixed inset-x-0 top-0 z-50 border-b backdrop-blur-md duration-200 ${
 					isIntersecting
-						? "border-transparent bg-brand-sand/0"
-						: "border-brand-line bg-brand-sand/92"
+						? "border-transparent bg-brand-beige/0"
+						: "border-brand-line bg-brand-beige/92"
 				}`}
 			>
 				<div className="container mx-auto flex flex-row-reverse items-center justify-between p-6">

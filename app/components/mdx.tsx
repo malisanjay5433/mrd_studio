@@ -146,7 +146,7 @@ const components = {
 	pre: ({ className, ...props }) => (
 		<pre
 			className={clsx(
-				"mt-6 mb-4 overflow-x-auto rounded-lg bg-brand-beige py-4 text-black",
+				"mt-6 mb-4 overflow-x-auto rounded-lg bg-brand-sand py-4 text-black",
 				className,
 			)}
 			{...props}

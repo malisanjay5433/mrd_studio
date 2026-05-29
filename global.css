@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply bg-brand-sand text-black antialiased;
+    @apply bg-brand-beige text-black antialiased;
   }
 
   ::selection {
@@ -46,7 +46,7 @@
   }
 
   .card-luxury {
-    @apply overflow-hidden rounded-luxury border border-brand-line bg-brand-beige/90 shadow-soft backdrop-blur-sm transition-all duration-500 ease-luxury;
+    @apply overflow-hidden rounded-luxury border border-brand-line bg-brand-sand/90 shadow-soft backdrop-blur-sm transition-all duration-500 ease-luxury;
   }
 
   .card-luxury:active {
@@ -54,7 +54,7 @@
   }
 
   .surface-dark {
-    @apply bg-brand-sand text-black;
+    @apply bg-brand-beige text-black;
   }
 
   .surface-dark .heading-editorial,

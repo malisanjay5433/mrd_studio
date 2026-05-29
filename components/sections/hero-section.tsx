@@ -12,7 +12,7 @@ export function HeroSection() {
 	return (
 		<section
 			aria-label="Hero"
-			className="relative min-h-[100dvh] w-full overflow-hidden bg-brand-sand"
+			className="relative min-h-[100dvh] w-full overflow-hidden bg-brand-beige"
 		>
 			<motion.div
 				className="absolute inset-0"
@@ -32,7 +32,7 @@ export function HeroSection() {
 			</motion.div>
 			<GrainOverlay opacity="medium" className="z-[1]" />
 			<div
-				className="absolute inset-0 z-[2] bg-gradient-to-t from-brand-sand via-brand-sand/40 to-brand-sand/20"
+				className="absolute inset-0 z-[2] bg-gradient-to-t from-brand-beige via-brand-beige/40 to-brand-beige/20"
 				aria-hidden
 			/>
 			<div className="pointer-events-none absolute inset-x-0 bottom-0 z-[3] h-px bg-gradient-to-r from-transparent via-brand-charcoal/12 to-transparent" />

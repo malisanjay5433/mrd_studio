@@ -4,7 +4,7 @@ import { BrandMark } from "./brand-mark";
 
 export function SiteHeader() {
 	return (
-		<header className="sticky top-0 z-50 border-b border-brand-line bg-brand-sand/90 backdrop-blur-xl">
+		<header className="sticky top-0 z-50 border-b border-brand-line bg-brand-beige/90 backdrop-blur-xl">
 			<div className="mx-auto flex max-w-[1600px] flex-col items-center gap-5 px-5 py-6 text-center sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:py-7 sm:text-left md:px-10 md:py-8 lg:px-12">
 				<Link
 					href="/"

@@ -8,7 +8,7 @@ const variants = {
 	primary:
 		"border border-brand-terracotta bg-brand-terracotta text-brand-white shadow-terracotta hover:border-black hover:bg-black hover:text-brand-white",
 	secondary:
-		"border border-brand-line bg-brand-beige/80 text-black hover:border-brand-terracotta/40 hover:bg-brand-beige",
+		"border border-brand-line bg-brand-sand/80 text-black hover:border-brand-terracotta/40 hover:bg-brand-sand",
 	ghostOnDark:
 		"border border-brand-terracotta/30 bg-transparent text-black hover:border-brand-terracotta hover:bg-brand-terracotta/10 hover:text-brand-terracotta",
 } as const;

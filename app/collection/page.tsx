@@ -39,7 +39,7 @@ export default function CollectionHubPage() {
 								<MotionReveal delay={i * 0.08}>
 									<Link href={era.href} className="group block">
 										<div className="card-luxury">
-											<div className="relative aspect-[5/4] bg-brand-beige/80">
+											<div className="relative aspect-[5/4] bg-brand-sand/80">
 												<StaticImage
 													src={era.cover.src}
 													alt={era.cover.alt}
