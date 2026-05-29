@@ -159,17 +159,6 @@ export const COLLECTION_2021_2025: CollectionPiece[] = [
 		},
 	},
 	{
-		slug: "quiet-harvest-06",
-		title: "Quiet harvest · 6",
-		description: "Quiet harvest series — studio ceramics 2021–2025.",
-		image: {
-			src: "/quiet-harvest-catalog/quiet-harvest-06.png",
-			alt: "Quiet harvest — ceramic still life 6",
-			width: 1402,
-			height: 1122,
-		},
-	},
-	{
 		slug: "quiet-harvest-07",
 		title: "Quiet harvest · 7",
 		description: "Quiet harvest series — studio ceramics 2021–2025.",
@@ -225,17 +214,6 @@ export const COLLECTION_2021_2025: CollectionPiece[] = [
 		},
 	},
 	{
-		slug: "quiet-harvest-12",
-		title: "Quiet harvest · 12",
-		description: "Quiet harvest series — studio ceramics 2021–2025.",
-		image: {
-			src: "/quiet-harvest-catalog/quiet-harvest-12.png",
-			alt: "Quiet harvest — ceramic still life 12",
-			width: 1402,
-			height: 1122,
-		},
-	},
-	{
 		slug: "quiet-harvest-13",
 		title: "Quiet harvest · 13",
 		description: "Quiet harvest series — studio ceramics 2021–2025.",
@@ -258,17 +236,6 @@ export const COLLECTION_2021_2025: CollectionPiece[] = [
 		},
 	},
 	{
-		slug: "quiet-harvest-15",
-		title: "Quiet harvest · 15",
-		description: "Quiet harvest series — studio ceramics 2021–2025.",
-		image: {
-			src: "/quiet-harvest-catalog/quiet-harvest-15.png",
-			alt: "Quiet harvest — ceramic still life 15",
-			width: 686,
-			height: 545,
-		},
-	},
-	{
 		slug: "quiet-harvest-16",
 		title: "Quiet harvest · 16",
 		description: "Quiet harvest series — studio ceramics 2021–2025.",
@@ -277,50 +244,6 @@ export const COLLECTION_2021_2025: CollectionPiece[] = [
 			alt: "Quiet harvest — ceramic still life 16",
 			width: 695,
 			height: 537,
-		},
-	},
-	{
-		slug: "quiet-harvest-17",
-		title: "Quiet harvest · 17",
-		description: "Quiet harvest series — studio ceramics 2021–2025.",
-		image: {
-			src: "/quiet-harvest-catalog/quiet-harvest-17.png",
-			alt: "Quiet harvest — ceramic still life 17",
-			width: 701,
-			height: 555,
-		},
-	},
-	{
-		slug: "quiet-harvest-18",
-		title: "Quiet harvest · 18",
-		description: "Quiet harvest series — studio ceramics 2021–2025.",
-		image: {
-			src: "/quiet-harvest-catalog/quiet-harvest-18.png",
-			alt: "Quiet harvest — ceramic still life 18",
-			width: 1402,
-			height: 1122,
-		},
-	},
-	{
-		slug: "quiet-harvest-19",
-		title: "Quiet harvest · 19",
-		description: "Quiet harvest series — studio ceramics 2021–2025.",
-		image: {
-			src: "/quiet-harvest-catalog/quiet-harvest-19.jpg",
-			alt: "Quiet harvest — ceramic still life 19",
-			width: 411,
-			height: 418,
-		},
-	},
-	{
-		slug: "quiet-harvest-20",
-		title: "Quiet harvest · 20",
-		description: "Quiet harvest series — studio ceramics 2021–2025.",
-		image: {
-			src: "/quiet-harvest-catalog/quiet-harvest-20.jpg",
-			alt: "Quiet harvest — ceramic still life 20",
-			width: 406,
-			height: 356,
 		},
 	},
 	{
