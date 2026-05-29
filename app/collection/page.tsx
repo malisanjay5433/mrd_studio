@@ -33,10 +33,9 @@ export default function CollectionHubPage() {
 						</h1>
 					</MotionReveal>
 
-					<ul className="mt-10 grid list-none gap-6 md:grid-cols-2 md:gap-8">
-						{COLLECTION_ERAS.map((era, i) => (
+					<ul className="mt-10 grid list-none grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
+						{COLLECTION_ERAS.map((era) => (
 							<li key={era.slug}>
-								<MotionReveal delay={i * 0.08}>
 									<Link href={era.href} className="group block">
 										<div className="card-luxury">
 											<div className="relative aspect-[5/4] bg-brand-sand/80">
@@ -47,7 +46,7 @@ export default function CollectionHubPage() {
 													height={era.cover.height}
 													quality={IMAGE_QUALITY.section}
 													className="h-full w-full object-contain object-center p-6 transition-transform duration-[1.1s] ease-luxury group-hover:scale-[1.02]"
-													sizes="(max-width: 768px) 100vw, 50vw"
+													sizes="(max-width: 640px) 100vw, 50vw"
 												/>
 											</div>
 											<div className="border-t border-brand-line px-5 py-5">
@@ -63,7 +62,6 @@ export default function CollectionHubPage() {
 											</div>
 										</div>
 									</Link>
-								</MotionReveal>
 							</li>
 						))}
 					</ul>

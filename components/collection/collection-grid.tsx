@@ -1,6 +1,5 @@
 import type { CollectionPiece } from "@/lib/constants/collection";
 import { IMAGE_QUALITY } from "@/lib/constants/landing";
-import { MotionReveal } from "@/components/ui/motion-reveal";
 import { StaticImage } from "@/components/ui/static-image";
 
 type CollectionGridProps = {
@@ -10,12 +9,11 @@ type CollectionGridProps = {
 export function CollectionGrid({ items }: CollectionGridProps) {
 	return (
 		<ul
-			className="relative mt-10 grid list-none grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6"
+			className="relative mt-10 grid list-none grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3"
 			role="list"
 		>
-			{items.map((item, i) => (
+			{items.map((item) => (
 				<li key={item.slug}>
-					<MotionReveal delay={(i % 3) * 0.04}>
 						<article id={item.slug} className="scroll-mt-28">
 							<div className="card-luxury">
 								<div className="relative aspect-[4/5] bg-brand-sand/80">
@@ -26,7 +24,7 @@ export function CollectionGrid({ items }: CollectionGridProps) {
 										height={item.image.height}
 										quality={IMAGE_QUALITY.section}
 										className="h-full w-full object-contain object-center p-4"
-										sizes="(max-width: 640px) 50vw, 33vw"
+										sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
 									/>
 								</div>
 								<div className="border-t border-brand-line px-4 py-4">
@@ -36,7 +34,6 @@ export function CollectionGrid({ items }: CollectionGridProps) {
 								</div>
 							</div>
 						</article>
-					</MotionReveal>
 				</li>
 			))}
 		</ul>
